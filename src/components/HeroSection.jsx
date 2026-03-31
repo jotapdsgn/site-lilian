@@ -49,9 +49,9 @@ export default function HeroSection() {
                 Realce sua beleza com
               </span>
 
-              {/* FRASE 2 com espaçamento responsivo */}
-              <span className="block mt-1 md:mt-3 lg:mt-6 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.05]
-                bg-gradient-to-r from-[#b4895b] to-[#6b4a2b]
+              {/* FRASE 2 com espaçamento e correção de corte */}
+              <span className="block mt-1 md:mt-3 lg:mt-5 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.2]
+                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 naturalidade e sofisticação.
               </span>
