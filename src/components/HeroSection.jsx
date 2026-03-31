@@ -43,8 +43,11 @@ export default function HeroSection() {
           >
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
               
+              {/* TÍTULO COM BELEZA EM DESTAQUE */}
               <span className="block text-3xl md:text-5xl leading-tight">
-                {content.title.line1}
+                Realce sua{" "}
+                <span className="font-semibold">beleza</span>{" "}
+                com
               </span>
 
               <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
