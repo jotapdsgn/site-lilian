@@ -50,7 +50,7 @@ export default function HeroSection() {
               </span>
 
               {/* FRASE 2 — mais próxima + maior no mobile */}
-              <span className="block mt-0.10 md:mt-3 lg:mt-5 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.0] py-[2px]
+              <span className="block mt-0.10 md:mt-3 lg:mt-5 text-5xl md:text-7xl lg:text-8xl font-script leading-[0.8] py-[2px]
                 bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 naturalidade e sofisticação.
