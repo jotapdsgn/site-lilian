@@ -50,17 +50,18 @@ export default function HeroSection() {
               </span>
 
               {/* FRASE 2 — GRANDE + SEM QUEBRA */}
-              <span
-                className="inline-block mt-2 px-1 md:px-2
-                text-[3.4rem] sm:text-[4rem] md:text-[5rem] lg:text-[6.5rem] xl:text-[7.5rem]
-                font-script
-                leading-[0.9]
-                whitespace-nowrap
-                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-                bg-clip-text text-transparent"
-              >
-                naturalidade e sofisticação.
-              </span>
+<span
+  className="
+    inline-block mt-2 px-1 md:px-2
+    text-[3.2rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6.5rem] xl:text-[7.5rem]
+    font-script
+    leading-[0.85] sm:leading-[0.9] md:leading-[0.9]
+    bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
+    bg-clip-text text-transparent
+  "
+>
+  naturalidade e sofisticação.
+</span>
 
             </h1>
 
