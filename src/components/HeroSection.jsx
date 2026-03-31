@@ -1,110 +1,107 @@
 import { motion } from "framer-motion";
 
-const WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.";
+const content = {
+  whatsapp: "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
+  
+  title: {
+    line1: "Aqui começa a sua",
+    highlight: "melhor versão."
+  },
+
+  description: {
+    line1: "Harmonização facial com estratégia e naturalidade.",
+    highlight: "Cada rosto é único",
+    line2: "— e o seu tratamento também deve ser."
+  },
+
+  button: "Agendar minha consulta agora"
+};
+
 const PHOTO = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/5a623968a_SaveClipApp_465188571_18020114405550440_8491901429770576039_n-Photoroom.png";
 const LOGO_WATERMARK = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/f8e2c7b5e_Prancheta4-8.png";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
-      {/* Background watermark - centered behind content */}
+    <section className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
+
       <img
         src={LOGO_WATERMARK}
         alt=""
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] md:w-[900px] opacity-[0.05] pointer-events-none select-none" />
-      
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] md:w-[900px] opacity-[0.05] pointer-events-none select-none"
+      />
 
       <div className="max-w-7xl mx-auto px-6 w-full">
-        {/* Mobile layout: heading → photo → text+button */}
-        {/* Desktop layout: two columns */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative z-10">
-            
+            transition={{ duration: 0.8 }}
+            className="relative z-10"
+          >
+
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] text-foreground">
-              Aqui começa a sua{" "}
-              <span className="text-primary font-medium italic">melhor versão.</span>
+              {content.title.line1}{" "}
+              <span className="text-primary font-medium italic">
+                {content.title.highlight}
+              </span>
             </h1>
 
-            {/* Photo shown here on mobile only */}
+            {/* FOTO MOBILE */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="flex justify-center my-6 lg:hidden">
-              
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex justify-center my-6 lg:hidden"
+            >
               <div className="relative w-44">
                 <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
                 <img
                   src={PHOTO}
-                  alt="Dra. Lilian Monteiro - Biomédica Esteta"
-                  className="relative rounded-[2rem] w-full object-cover shadow-2xl" />
-                
-                {/* Logo badge no canto inferior direito - mobile */}
-                <motion.div
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center z-10"
-                >
-                  <img
-                    src="https://media.base44.com/images/public/69c6fc2447dd489dd576db88/63002581d_Prancheta1-8.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </motion.div>
+                  alt=""
+                  className="relative rounded-[2rem] w-full object-cover shadow-2xl"
+                />
               </div>
             </motion.div>
 
             <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-              Harmonização facial com estratégia e naturalidade.<br />
-              <span className="text-primary font-medium">Cada rosto é único</span> — e o seu tratamento também deve ser.
+              {content.description.line1}
+              <br />
+              <span className="text-primary font-medium">
+                {content.description.highlight}
+              </span>{" "}
+              {content.description.line2}
             </p>
 
             <a
-              href={WHATSAPP_LINK}
+              href={content.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-10 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity w-full text-center md:w-auto">
-              
-              Agendar minha consulta agora
+              className="inline-block mt-10 bg-primary text-primary-foreground px-8 py-4 rounded-full w-full text-center md:w-auto"
+            >
+              {content.button}
             </a>
           </motion.div>
 
-          {/* Photo shown here on desktop only */}
+          {/* FOTO DESKTOP */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative hidden lg:flex justify-end">
-            
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative hidden lg:flex justify-end"
+          >
             <div className="relative w-44 md:w-96 lg:w-[440px]">
               <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
               <img
                 src={PHOTO}
-                alt="Dra. Lilian Monteiro - Biomédica Esteta"
-                className="relative rounded-[2rem] w-full object-cover shadow-2xl" />
-              
-              {/* Logo badge no canto inferior direito */}
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
-              >
-                <img
-                  src="https://media.base44.com/images/public/69c6fc2447dd489dd576db88/63002581d_Prancheta1-8.png"
-                  alt="Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-
-              <div className="absolute inset-0 rounded-[2rem]" style={{ backgroundImage: 'url(https://media.base44.com/images/public/69c6fc2447dd489dd576db88/5b32a3dae_white-abstract-texture-background.jpg)', backgroundSize: '150px', opacity: 0.08 }} />
+                alt=""
+                className="relative rounded-[2rem] w-full object-cover shadow-2xl"
+              />
             </div>
           </motion.div>
+
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
