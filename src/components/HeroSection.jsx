@@ -43,7 +43,7 @@ export default function HeroSection() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
               {/* FRASE 1 */}
-              <span className="block text-3xl md:text-5xl leading-tight font-semibold
+              <span className="block text-3xl md:text-5xl leading-tight font-medium
                 bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 Realce sua beleza com
