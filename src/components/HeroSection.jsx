@@ -3,30 +3,27 @@ import { motion } from "framer-motion";
 const content = {
   whatsapp:
     "https://api.whatsapp.com/send/?phone=5531994105755&text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
-
   title: {
     line1: "Realce sua beleza com",
-    highlight: "naturalidade e sofisticação."
+    highlight: "naturalidade e sofisticação.",
   },
-
   description: {
     line1:
       "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
-    highlight: "elegantes, seguros e naturais."
+    highlight: "elegantes, seguros e naturais.",
   },
-
-  button: "Agendar consulta"
+  button: "Agendar consulta",
 };
 
 // 👉 imagens agora corretas (public/images)
 const PHOTO = "/images/lilian.jpg";
 const LOGO_BADGE = "/images/logo.png";
-const LOGO_WATERMARK = "/images/logo.png";
+const LOGO_WATERMARK = "/images/textura.jpg"; // 👈 TROCA AQUI
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
-
+      
       {/* Fundo */}
       <img
         src={LOGO_WATERMARK}
@@ -44,7 +41,6 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-            
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] text-foreground">
               {content.title.line1}{" "}
               <span className="text-primary font-medium italic">
@@ -61,7 +57,6 @@ export default function HeroSection() {
             >
               <div className="relative w-44">
                 <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
-
                 <img
                   src={PHOTO}
                   alt="Dra. Lilian Monteiro"
@@ -71,7 +66,11 @@ export default function HeroSection() {
                 {/* LOGO ANIMADA */}
                 <motion.div
                   animate={{ y: [0, -6, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                   className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center z-10"
                 >
                   <img
@@ -109,7 +108,7 @@ export default function HeroSection() {
           >
             <div className="relative w-44 md:w-96 lg:w-[440px]">
               <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
-
+              
               <img
                 src={PHOTO}
                 alt="Dra. Lilian Monteiro"
@@ -119,7 +118,11 @@ export default function HeroSection() {
               {/* LOGO ANIMADA */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
               >
                 <img
@@ -133,9 +136,9 @@ export default function HeroSection() {
               <div
                 className="absolute inset-0 rounded-[2rem]"
                 style={{
-                  backgroundImage: "url(/images/logo.png)",
+                  backgroundImage: "url(/images/textura.jpg)",
                   backgroundSize: "150px",
-                  opacity: 0.08
+                  opacity: 0.08,
                 }}
               />
             </div>
