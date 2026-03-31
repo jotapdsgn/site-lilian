@@ -6,8 +6,6 @@ import TreatmentsSection from "../components/TreatmentsSection";
 import AboutSection from "../components/AboutSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import CtaSection from "../components/CtaSection";
-import FaqSection from "../components/FaqSection";
-import BotoxClubSection from "../components/BotoxClubSection";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
@@ -37,8 +35,6 @@ export default function Home() {
       <TestimonialsSection />
 
       <CtaSection clinicImage={IMAGES.clinic} />
-      <BotoxClubSection />
-      <FaqSection />
 
       <Footer />
       <WhatsAppButton />
