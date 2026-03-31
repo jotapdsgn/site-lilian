@@ -43,8 +43,8 @@ export default function HeroSection() {
           >
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
-              {/* FRASE TODA SEMI-BOLD */}
-              <span className="block text-3xl md:text-5xl leading-tight font-semibold">
+              {/* FRASE TODA EM MARROM + SEMI-BOLD */}
+              <span className="block text-3xl md:text-5xl leading-tight font-semibold text-[#6b4a2b]">
                 Realce sua{" "}
                 <span className="text-[#6b4a2b]">beleza</span>{" "}
                 com
