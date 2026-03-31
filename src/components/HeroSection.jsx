@@ -40,7 +40,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10 px-4 sm:px-0"
           >
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[0.75] text-foreground">
               
               {/* FRASE 1 */}
               <span className="block text-3xl md:text-5xl leading-tight font-medium
@@ -52,11 +52,11 @@ export default function HeroSection() {
               {/* FRASE 2 — CORRIGIDA */}
 <span
   className="inline-block mt-1 md:mt-2 lg:mt-3 px-1 md:px-2
-  text-5xl md:text-7xl lg:text-8xl font-script
-  leading-[1.15]
+  text-4xl md:text-6xl lg:text-7xl font-script
+  leading-[0.95]
   bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
   bg-clip-text text-transparent"
-  style={{ paddingTop: "6px", paddingBottom: "6px" }}
+  style={{ paddingTop: "4px", paddingBottom: "4px" }}
 >
   naturalidade e sofisticação.
 </span>
