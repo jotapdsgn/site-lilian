@@ -63,7 +63,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center mt-12 mb-8 lg:hidden"
+              className="flex justify-center mt-16 mb-12 lg:hidden"
             >
               <div className="relative w-64">
                 <div className="absolute -inset-5 bg-accent/50 rounded-[2rem] rotate-3" />
@@ -81,7 +81,7 @@ export default function HeroSection() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute -bottom-4 -right-4 bg-[#cfbfad] rounded-xl shadow-lg p-2 w-14 h-14 flex items-center justify-center z-10"
+                  className="absolute -bottom-4 -right-4 bg-[#cfbfad] rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
                 >
                   <img
                     src={LOGO_BADGE}
