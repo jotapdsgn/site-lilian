@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}>
           
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">Depoimentos</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-light text-foreground">Histórias que falam por si</h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-light text-foreground">Histórias que falam por si</h2>
         </motion.div>
 
         <div className="mt-16 relative">
