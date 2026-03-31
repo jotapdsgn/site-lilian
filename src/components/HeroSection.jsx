@@ -15,7 +15,6 @@ const content = {
   button: "Agendar consulta",
 };
 
-// 👉 imagens
 const PHOTO = "/images/lilian.jpg";
 const LOGO_BADGE = "/images/logo.png";
 const LOGO_WATERMARK = "/images/textura.jpg";
@@ -43,16 +42,16 @@ export default function HeroSection() {
           >
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
-              {/* FRASE COM MARROM + DEGRADÊ */}
+              {/* FRASE 1 */}
               <span className="block text-3xl md:text-5xl leading-tight font-semibold text-[#6b4a2b]">
                 Realce sua{" "}
                 <span className="text-[#6b4a2b]">beleza</span>{" "}
                 com
               </span>
 
-              {/* DEGRADÊ MARROM → DOURADO */}
-              <span className="block text-5xl md:text-7xl lg:text-8xl font-script leading-[0.95] -mt-1 
-                bg-gradient-to-r from-[#5a3a1e] via-[#a67c52] to-[#d4af37] 
+              {/* FRASE 2 — espaçamento ajustado */}
+              <span className="block mt-[4px] text-5xl md:text-7xl lg:text-8xl font-script leading-[1.05]
+                bg-gradient-to-r from-[#b08a5a] via-[#8a5a3c] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 naturalidade e sofisticação.
               </span>
