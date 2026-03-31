@@ -53,14 +53,17 @@ export default function HeroSection() {
 <span
   className="
     inline-block mt-2 px-1 md:px-2
-    text-[3.2rem] sm:text-[3.8rem] md:text-[5rem] lg:text-[6.5rem] xl:text-[7.5rem]
+    text-[4rem] sm:text-[5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[9rem]
     font-script
-    leading-[0.85] sm:leading-[0.9] md:leading-[0.9]
+    leading-[0.75] sm:leading-[0.8] md:leading-[0.8]
+    tracking-tight
     bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
     bg-clip-text text-transparent
   "
 >
-  naturalidade e sofisticação.
+  naturalidade e
+  <br />
+  sofisticação.
 </span>
 
             </h1>
