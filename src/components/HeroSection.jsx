@@ -44,12 +44,12 @@ export default function HeroSection() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
               
               {/* Linha 1 (MENOR NO MOBILE) */}
-              <span className="block text-2xl md:text-5xl leading-tight">
+              <span className="block text-3xl md:text-5xl leading-tight">
                 {content.title.line1}
               </span>
 
               {/* Linha 2 */}
-              <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
+              <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
                 naturalidade e sofisticação.
               </span>
 
