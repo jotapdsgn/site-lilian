@@ -58,7 +58,7 @@ export default function TreatmentsSection({ images }) {
     Tratamentos modernos
   </span>
 
-  <span className="font-script text-primary text-5xl md:text-5xl block leading-[1.0] -mt-1">
+  <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
     com abordagem personalizada
   </span>
 </h2>
