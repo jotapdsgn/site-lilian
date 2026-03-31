@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const PHOTO = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/5a623968a_SaveClipApp_465188571_18020114405550440_8491901429770576039_n-Photoroom.png";
+const PHOTO = "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/47e5485c0_Screenshot_11.jpg";
 
 const stats = [
   { number: "5+", label: "anos de experiência" },
