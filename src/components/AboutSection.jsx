@@ -42,8 +42,8 @@ export default function AboutSection() {
             Sobre
           </p>
 
-          <h2 className="font-heading text-4xl md:text-5xl font-light leading-tight text-foreground">
-            Dra. Lilian Monteiro
+          <h2 className="font-script text-primary text-5xl md:text-7xl leading-tight">
+  Dra. Lilian Monteiro
           </h2>
 
           <p className="mt-6 font-body text-base text-muted-foreground font-light leading-relaxed">

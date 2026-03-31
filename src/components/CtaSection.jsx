@@ -23,15 +23,15 @@ export default function CtaSection() {
         transition={{ duration: 0.7 }}
         className="relative z-10 max-w-3xl mx-auto px-6 text-center"
       >
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-white/60 mb-4">
+        <p className="font-body text-xs tracking-[0.3em] uppercase text-white/60 mb-2">
           Agende já
         </p>
 
-        <h2 className="text-white text-2xl font-light leading-tight md:text-5xl">
+        <h2 className="text-white text-3xl md:text-6xl font-light leading-tight font-script">
           Dê o primeiro passo em direção à sua melhor versão
         </h2>
 
-        <p className="mt-6 font-body text-base text-white/80 font-light leading-relaxed">
+        <p className="mt-3 font-body text-base text-white/80 font-light leading-relaxed">
           Agende sua consulta e descubra o tratamento ideal para você.
         </p>
 
@@ -39,7 +39,7 @@ export default function CtaSection() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-10 font-body text-sm tracking-wider bg-white text-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+          className="inline-block mt-6 font-body text-sm tracking-wider bg-white text-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
         >
           Agendar consulta agora
         </a>
