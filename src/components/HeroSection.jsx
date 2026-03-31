@@ -52,7 +52,7 @@ export default function HeroSection() {
               {/* FRASE 2 — GRANDE + SEM QUEBRA */}
               <span
                 className="inline-block mt-2 px-1 md:px-2
-                text-[2.8rem] sm:text-[3.2rem] md:text-[4.2rem] lg:text-[5.2rem]
+                text-[3.4rem] sm:text-[4rem] md:text-[5rem] lg:text-[6.5rem] xl:text-[7.5rem]
                 font-script
                 leading-[0.9]
                 whitespace-nowrap
