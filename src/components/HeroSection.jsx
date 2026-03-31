@@ -43,14 +43,17 @@ export default function HeroSection() {
           >
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
-              {/* FRASE TODA EM MARROM + SEMI-BOLD */}
+              {/* FRASE COM MARROM + DEGRADÊ */}
               <span className="block text-3xl md:text-5xl leading-tight font-semibold text-[#6b4a2b]">
                 Realce sua{" "}
                 <span className="text-[#6b4a2b]">beleza</span>{" "}
                 com
               </span>
 
-              <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
+              {/* DEGRADÊ MARROM → DOURADO */}
+              <span className="block text-5xl md:text-7xl lg:text-8xl font-script leading-[0.95] -mt-1 
+                bg-gradient-to-r from-[#5a3a1e] via-[#a67c52] to-[#d4af37] 
+                bg-clip-text text-transparent">
                 naturalidade e sofisticação.
               </span>
 
