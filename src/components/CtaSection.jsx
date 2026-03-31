@@ -27,7 +27,7 @@ export default function CtaSection() {
           Agende já
         </p>
 
-        <h2 className="text-white text-3xl md:text-6xl font-light leading-tight font-script">
+        <h2 className="text-white text-5xl md:text-6xl font-light leading-tight font-script">
           Dê o primeiro passo em direção à sua melhor versão
         </h2>
 

@@ -41,7 +41,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-      <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground">
+      <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground">
   
   {/* Linha 1 (menor) */}
   <span className="block">
@@ -49,7 +49,7 @@ export default function HeroSection() {
   </span>
 
   {/* Linha 2 (cursiva maior) */}
-  <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block mt-4 leading-tight">
+  <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block mt-4 leading-tight">
     naturalidade e sofisticação.
   </span>
 

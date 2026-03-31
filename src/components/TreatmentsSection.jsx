@@ -54,11 +54,11 @@ export default function TreatmentsSection({ images }) {
           </p>
 
 <h2 className="text-foreground">
-  <span className="font-heading text-2xl md:text-4xl font-light block leading-[1.1]">
+  <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1]">
     Tratamentos modernos
   </span>
 
-  <span className="font-script text-primary text-3xl md:text-5xl block leading-[1.0] -mt-1">
+  <span className="font-script text-primary text-5xl md:text-5xl block leading-[1.0] -mt-1">
     com abordagem personalizada
   </span>
 </h2>
