@@ -23,7 +23,6 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-32 md:pt-20 overflow-hidden">
       
-      {/* Fundo */}
       <img
         src={LOGO_WATERMARK}
         alt=""
@@ -40,7 +39,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10 px-4 sm:px-0"
           >
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[0.75] text-foreground">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-foreground">
               
               {/* FRASE 1 */}
               <span className="block text-3xl md:text-5xl leading-tight font-medium
@@ -49,22 +48,22 @@ export default function HeroSection() {
                 Realce sua beleza com
               </span>
 
-              {/* FRASE 2 — CORRIGIDA */}
-<span
-  className="inline-block mt-1 md:mt-2 lg:mt-3 px-1 md:px-2
-  text-4xl md:text-6xl lg:text-7xl font-script
-  leading-[0.95]
-  bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-  bg-clip-text text-transparent"
-  style={{ paddingTop: "4px", paddingBottom: "4px" }}
->
-  naturalidade e sofisticação.
-</span>
+              {/* FRASE 2 — AJUSTADA */}
+              <span
+                className="inline-block mt-1 md:mt-1 px-1 md:px-2
+                text-[2.25rem] md:text-6xl lg:text-7xl font-script
+                leading-[1.05]
+                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
+                bg-clip-text text-transparent"
+                style={{ paddingTop: "5px", paddingBottom: "5px" }}
+              >
+                naturalidade e sofisticação.
+              </span>
 
             </h1>
 
-            {/* DESCRIÇÃO — LINHAS MAIS JUNTAS */}
-            <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-snug">
+            {/* DESCRIÇÃO */}
+            <p className="mt-5 font-body text-lg md:text-xl text-muted-foreground font-light leading-snug">
               {content.description.line1}{" "}
               <span className="text-primary font-medium">
                 {content.description.highlight}
@@ -81,7 +80,7 @@ export default function HeroSection() {
             </a>
           </motion.div>
 
-          {/* FOTO DESKTOP */}
+          {/* FOTO */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
