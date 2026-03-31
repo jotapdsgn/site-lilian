@@ -41,12 +41,12 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10 px-4 sm:px-0"
           >
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
-              {/* TÍTULO COM BELEZA EM DESTAQUE */}
-              <span className="block text-3xl md:text-5xl leading-tight">
+              {/* FRASE TODA SEMI-BOLD */}
+              <span className="block text-3xl md:text-5xl leading-tight font-semibold">
                 Realce sua{" "}
-                <span className="font-semibold">beleza</span>{" "}
+                <span className="text-[#6b4a2b]">beleza</span>{" "}
                 com
               </span>
 
