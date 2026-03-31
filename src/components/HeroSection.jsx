@@ -49,8 +49,8 @@ export default function HeroSection() {
                 Realce sua beleza com
               </span>
 
-              {/* FRASE 2 — mais próxima + maior no mobile */}
-              <span className="block mt-0.10 md:mt-3 lg:mt-5 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.0] py-[2px]
+              {/* FRASE 2 — AJUSTADA */}
+              <span className="block mt-1 md:mt-2 lg:mt-3 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.15] py-[2px]
                 bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 naturalidade e sofisticação.
@@ -92,7 +92,8 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+            {/* DESCRIÇÃO — MENOS ESPAÇO ENTRE LINHAS */}
+            <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-snug">
               {content.description.line1}{" "}
               <span className="text-primary font-medium">
                 {content.description.highlight}
