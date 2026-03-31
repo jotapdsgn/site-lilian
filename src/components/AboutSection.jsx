@@ -42,9 +42,13 @@ export default function AboutSection() {
             Sobre
           </p>
 
+          {/* CURSIVA AJUSTADA */}
           <h2
-            className="text-primary text-5xl md:text-7xl leading-tight"
-            style={{ fontFamily: "var(--font-script)" }}
+            className="text-primary text-5xl md:text-7xl leading-[0.9] pb-1"
+            style={{
+              fontFamily: "var(--font-script)",
+              display: "inline-block"
+            }}
           >
             Dra. Lilian Monteiro
           </h2>
@@ -70,7 +74,10 @@ export default function AboutSection() {
               <div key={i}>
                 <p
                   className="text-2xl md:text-4xl font-bold text-primary"
-                  style={{ fontFamily: "'Ysabeau Infant', sans-serif", fontWeight: 700 }}
+                  style={{
+                    fontFamily: "'Ysabeau Infant', sans-serif",
+                    fontWeight: 700
+                  }}
                 >
                   {s.number}
                 </p>
