@@ -53,7 +53,7 @@ export default function HeroSection() {
 <span
   className="
     inline-block mt-2 px-1 md:px-2
-    text-[4rem] sm:text-[5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[9rem]
+    text-[4.5rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[9rem]
     font-script
     leading-[0.75] sm:leading-[0.8] md:leading-[0.8]
     tracking-tight
