@@ -22,7 +22,7 @@ const LOGO_WATERMARK = "/images/textura.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
       
       {/* Fundo */}
       <img
@@ -41,19 +41,19 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-      <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground">
-  
-  {/* Linha 1 (menor) */}
-  <span className="block">
-    {content.title.line1}{" "}
-  </span>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
+              
+              {/* Linha 1 */}
+              <span className="block leading-tight">
+                {content.title.line1}
+              </span>
 
-  {/* Linha 2 (cursiva maior) */}
-  <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block mt-4 leading-tight">
-    naturalidade e sofisticação.
-  </span>
+              {/* Linha 2 */}
+              <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
+                naturalidade e sofisticação.
+              </span>
 
-      </h1>
+            </h1>
 
             {/* FOTO MOBILE */}
             <motion.div
@@ -62,8 +62,8 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex justify-center my-6 lg:hidden"
             >
-              <div className="relative w-44">
-                <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
+              <div className="relative w-64">
+                <div className="absolute -inset-5 bg-accent/50 rounded-[2rem] rotate-3" />
                 
                 <img
                   src={PHOTO}
@@ -79,7 +79,7 @@ export default function HeroSection() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center z-10"
+                  className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-14 h-14 flex items-center justify-center z-10"
                 >
                   <img
                     src={LOGO_BADGE}
