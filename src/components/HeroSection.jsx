@@ -4,17 +4,17 @@ const content = {
   whatsapp: "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
   
   title: {
-    line1: "Aqui começa a sua",
-    highlight: "melhor versão."
+    line1: "Realce sua beleza com",
+    highlight: "naturalidade e sofisticação."
   },
 
   description: {
-    line1: "Harmonização facial com estratégia e naturalidade.",
-    highlight: "Cada rosto é único",
-    line2: "— e o seu tratamento também deve ser."
+    line1: "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
+    highlight: "elegantes, seguros e naturais.",
+    line2: ""
   },
 
-  button: "Agendar minha consulta agora"
+  button: "Agendar consulta"
 };
 
 const PHOTO = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/5a623968a_SaveClipApp_465188571_18020114405550440_8491901429770576039_n-Photoroom.png";
