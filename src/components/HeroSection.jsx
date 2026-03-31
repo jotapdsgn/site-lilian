@@ -39,16 +39,14 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10"
+            className="relative z-10 px-4 sm:px-0"
           >
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
               
-              {/* Linha 1 (MENOR NO MOBILE) */}
               <span className="block text-3xl md:text-5xl leading-tight">
                 {content.title.line1}
               </span>
 
-              {/* Linha 2 */}
               <span className="text-primary font-script text-5xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
                 naturalidade e sofisticação.
               </span>
@@ -71,7 +69,6 @@ export default function HeroSection() {
                   className="relative rounded-[2rem] w-full object-cover shadow-2xl"
                 />
 
-                {/* LOGO ANIMADA */}
                 <motion.div
                   animate={{ y: [0, -6, 0] }}
                   transition={{
@@ -123,7 +120,6 @@ export default function HeroSection() {
                 className="relative rounded-[2rem] w-full object-cover shadow-2xl"
               />
 
-              {/* LOGO ANIMADA */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{
@@ -140,7 +136,6 @@ export default function HeroSection() {
                 />
               </motion.div>
 
-              {/* TEXTURA */}
               <div
                 className="absolute inset-0 rounded-[2rem]"
                 style={{
