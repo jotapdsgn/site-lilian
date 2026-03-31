@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const content = {
-  whatsapp: "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
+  whatsapp: "https://api.whatsapp.com/send/?phone=5531994105755&text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
   
   title: {
     line1: "Realce sua beleza com",
@@ -16,13 +16,15 @@ const content = {
   button: "Agendar consulta"
 };
 
-const PHOTO = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/5a623968a_SaveClipApp_465188571_18020114405550440_8491901429770576039_n-Photoroom.png";
-const LOGO_WATERMARK = "https://media.base44.com/images/public/user_69bae0616954e84a3352e178/f8e2c7b5e_Prancheta4-8.png";
+const PHOTO = "/images/lilian.jpg";
+const LOGO_BADGE = "/images/logo.png";
+const LOGO_WATERMARK = "/images/logo.png";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
 
+      {/* Fundo */}
       <img
         src={LOGO_WATERMARK}
         alt=""
@@ -32,6 +34,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
+          {/* TEXTO */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,11 +58,23 @@ export default function HeroSection() {
             >
               <div className="relative w-44">
                 <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
+                
                 <img
                   src={PHOTO}
-                  alt=""
                   className="relative rounded-[2rem] w-full object-cover shadow-2xl"
                 />
+
+                {/* LOGO ANIMADA */}
+                <motion.div
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center z-10"
+                >
+                  <img
+                    src={LOGO_BADGE}
+                    className="w-full h-full object-contain"
+                  />
+                </motion.div>
               </div>
             </motion.div>
 
@@ -89,11 +104,23 @@ export default function HeroSection() {
           >
             <div className="relative w-44 md:w-96 lg:w-[440px]">
               <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
+
               <img
                 src={PHOTO}
-                alt=""
                 className="relative rounded-[2rem] w-full object-cover shadow-2xl"
               />
+
+              {/* LOGO ANIMADA */}
+              <motion.div
+                animate={{ y: [0, -6, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
+              >
+                <img
+                  src={LOGO_BADGE}
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
             </div>
           </motion.div>
 
