@@ -49,50 +49,19 @@ export default function HeroSection() {
                 Realce sua beleza com
               </span>
 
-              {/* FRASE 2 — AJUSTADA */}
-              <span className="block mt-1 md:mt-2 lg:mt-3 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.15] py-[2px]
+              {/* FRASE 2 — CORRIGIDA */}
+              <span
+                className="block mt-1 md:mt-2 lg:mt-3 text-5xl md:text-7xl lg:text-8xl font-script
+                leading-[1.1] py-2 overflow-visible
                 bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-                bg-clip-text text-transparent">
+                bg-clip-text text-transparent"
+              >
                 naturalidade e sofisticação.
               </span>
 
             </h1>
 
-            {/* FOTO MOBILE */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center mt-12 mb-12 lg:hidden"
-            >
-              <div className="relative w-64">
-                <div className="absolute -inset-5 bg-accent/50 rounded-[2rem] rotate-3" />
-                
-                <img
-                  src={PHOTO}
-                  alt="Dra. Lilian Monteiro"
-                  className="relative rounded-[2rem] w-full object-cover shadow-2xl"
-                />
-
-                <motion.div
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -bottom-4 -right-4 bg-[#cfbfad] rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
-                >
-                  <img
-                    src={LOGO_BADGE}
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-
-            {/* DESCRIÇÃO — MENOS ESPAÇO ENTRE LINHAS */}
+            {/* DESCRIÇÃO — LINHAS MAIS JUNTAS */}
             <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-snug">
               {content.description.line1}{" "}
               <span className="text-primary font-medium">
@@ -104,7 +73,7 @@ export default function HeroSection() {
               href={content.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-10 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity w-full text-center md:w-auto"
+              className="inline-block mt-8 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity w-full text-center md:w-auto"
             >
               {content.button}
             </a>
