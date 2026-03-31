@@ -22,7 +22,7 @@ const LOGO_WATERMARK = "/images/textura.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 md:pt-20 overflow-hidden">
       
       {/* Fundo */}
       <img
@@ -44,7 +44,7 @@ export default function HeroSection() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
               
               {/* Linha 1 */}
-              <span className="block leading-tight">
+              <span className="block text-3xl md:text-5xl leading-tight">
                 {content.title.line1}
               </span>
 
