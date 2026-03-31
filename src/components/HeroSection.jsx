@@ -60,7 +60,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center my-6 lg:hidden"
+              className="flex justify-center mt-12 mb-8 lg:hidden"
             >
               <div className="relative w-64">
                 <div className="absolute -inset-5 bg-accent/50 rounded-[2rem] rotate-3" />
