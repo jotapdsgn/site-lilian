@@ -22,7 +22,7 @@ const LOGO_WATERMARK = "/images/textura.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 md:pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-28 md:pt-20 overflow-hidden">
       
       {/* Fundo */}
       <img
@@ -41,19 +41,19 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
-              
-              {/* Linha 1 */}
-              <span className="block text-3xl md:text-5xl leading-tight">
-                {content.title.line1}
-              </span>
+<h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
+  
+  {/* Linha 1 (menor no mobile) */}
+  <span className="block text-2xl md:text-5xl leading-tight">
+    {content.title.line1}
+  </span>
 
-              {/* Linha 2 */}
-              <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
-                naturalidade e sofisticação.
-              </span>
+  {/* Linha 2 */}
+  <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block -mt-1 leading-[0.95]">
+    naturalidade e sofisticação.
+  </span>
 
-            </h1>
+</h1>
 
             {/* FOTO MOBILE */}
             <motion.div
