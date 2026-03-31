@@ -43,15 +43,15 @@ export default function HeroSection() {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground">
               
               {/* FRASE 1 */}
-              <span className="block text-3xl md:text-5xl leading-tight font-semibold text-[#6b4a2b]">
-                Realce sua{" "}
-                <span className="text-[#6b4a2b]">beleza</span>{" "}
-                com
+              <span className="block text-3xl md:text-5xl leading-tight font-semibold
+                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
+                bg-clip-text text-transparent">
+                Realce sua beleza com
               </span>
 
-              {/* FRASE 2 — espaçamento ajustado */}
-              <span className="block mt-[4px] text-5xl md:text-7xl lg:text-8xl font-script leading-[1.05]
-                bg-gradient-to-r from-[#b08a5a] via-[#8a5a3c] to-[#6b4a2b]
+              {/* FRASE 2 com espaçamento responsivo */}
+              <span className="block mt-1 md:mt-3 lg:mt-4 text-5xl md:text-7xl lg:text-8xl font-script leading-[1.05]
+                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent">
                 naturalidade e sofisticação.
               </span>
