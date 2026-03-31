@@ -10,8 +10,7 @@ const content = {
 
   description: {
     line1: "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
-    highlight: "elegantes, seguros e naturais.",
-    line2: ""
+    highlight: "elegantes, seguros e naturais."
   },
 
   button: "Agendar consulta"
@@ -65,12 +64,10 @@ export default function HeroSection() {
             </motion.div>
 
             <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-              {content.description.line1}
-              <br />
+              {content.description.line1}{" "}
               <span className="text-primary font-medium">
                 {content.description.highlight}
-              </span>{" "}
-              {content.description.line2}
+              </span>
             </p>
 
             <a
