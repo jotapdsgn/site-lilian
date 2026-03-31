@@ -15,10 +15,10 @@ const content = {
   button: "Agendar consulta",
 };
 
-// 👉 imagens agora corretas (public/images)
+// 👉 imagens
 const PHOTO = "/images/lilian.jpg";
 const LOGO_BADGE = "/images/logo.png";
-const LOGO_WATERMARK = "/images/textura.jpg"; // 👈 TROCA AQUI
+const LOGO_WATERMARK = "/images/textura.jpg";
 
 export default function HeroSection() {
   return (
@@ -41,12 +41,19 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="relative z-10"
           >
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] text-foreground">
-              {content.title.line1}{" "}
-              <span className="text-primary font-medium italic">
-                {content.title.highlight}
-              </span>
-            </h1>
+      <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground">
+  
+  {/* Linha 1 (menor) */}
+  <span className="block">
+    {content.title.line1}{" "}
+  </span>
+
+  {/* Linha 2 (cursiva maior) */}
+  <span className="text-primary font-script text-6xl md:text-7xl lg:text-8xl block mt-4 leading-tight">
+    naturalidade e sofisticação.
+  </span>
+
+      </h1>
 
             {/* FOTO MOBILE */}
             <motion.div
@@ -57,6 +64,7 @@ export default function HeroSection() {
             >
               <div className="relative w-44">
                 <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
+                
                 <img
                   src={PHOTO}
                   alt="Dra. Lilian Monteiro"
