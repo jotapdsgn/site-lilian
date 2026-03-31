@@ -1,24 +1,27 @@
 import { motion } from "framer-motion";
 
 const content = {
-  whatsapp: "https://api.whatsapp.com/send/?phone=5531994105755&text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
-  
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=5531994105755&text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
+
   title: {
     line1: "Realce sua beleza com",
     highlight: "naturalidade e sofisticação."
   },
 
   description: {
-    line1: "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
+    line1:
+      "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
     highlight: "elegantes, seguros e naturais."
   },
 
   button: "Agendar consulta"
 };
 
-const PHOTO = "/images/lilian.jpg";
-const LOGO_BADGE = "/images/logo.png";
-const LOGO_WATERMARK = "/images/logo.png";
+// 👉 arquivos SOLTOS dentro de /public
+const PHOTO = "/lilian.jpg";
+const LOGO_BADGE = "/logo.png";
+const LOGO_WATERMARK = "/logo.png";
 
 export default function HeroSection() {
   return (
@@ -39,10 +42,8 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10"
           >
-
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] text-foreground">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05]">
               {content.title.line1}{" "}
               <span className="text-primary font-medium italic">
                 {content.title.highlight}
@@ -58,7 +59,7 @@ export default function HeroSection() {
             >
               <div className="relative w-44">
                 <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
-                
+
                 <img
                   src={PHOTO}
                   className="relative rounded-[2rem] w-full object-cover shadow-2xl"
@@ -68,7 +69,7 @@ export default function HeroSection() {
                 <motion.div
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center z-10"
+                  className="absolute -bottom-3 -right-3 bg-white rounded-xl shadow-lg p-1.5 w-12 h-12 flex items-center justify-center"
                 >
                   <img
                     src={LOGO_BADGE}
@@ -78,7 +79,7 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            <p className="mt-6 font-body text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+            <p className="mt-6 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
               {content.description.line1}{" "}
               <span className="text-primary font-medium">
                 {content.description.highlight}
@@ -89,7 +90,7 @@ export default function HeroSection() {
               href={content.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-10 bg-primary text-primary-foreground px-8 py-4 rounded-full w-full text-center md:w-auto"
+              className="inline-block mt-10 bg-primary text-white px-8 py-4 rounded-full w-full text-center md:w-auto"
             >
               {content.button}
             </a>
@@ -102,7 +103,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden lg:flex justify-end"
           >
-            <div className="relative w-44 md:w-96 lg:w-[440px]">
+            <div className="relative w-[440px]">
               <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
 
               <img
@@ -114,7 +115,7 @@ export default function HeroSection() {
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
+                className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center"
               >
                 <img
                   src={LOGO_BADGE}
