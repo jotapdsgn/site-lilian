@@ -9,16 +9,17 @@ const benefits = [
   "Experiência pensada em cada detalhe"
 ];
 
-export default function RejuvenationSection() {
+export default function RejuvenationSection({ treatmentImage }) {
   return (
     <section className="py-20 md:py-32">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
+        {/* TEXTO (agora só lista) */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="space-y-5"
         >
           {benefits.map((b, i) => (
@@ -32,6 +33,33 @@ export default function RejuvenationSection() {
               </p>
             </div>
           ))}
+        </motion.div>
+
+        {/* IMAGEM (mantida) */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="relative"
+        >
+          <div className="rounded-[2rem] overflow-hidden shadow-xl relative w-44 mx-auto lg:w-full">
+            <img
+              src="https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f99d1c92d_Screenshot_1.jpg"
+              alt="Tratamento de rejuvenescimento facial"
+              className="w-full h-64 md:h-[500px] object-cover"
+            />
+
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage:
+                  "url(https://media.base44.com/images/public/69c6fc2447dd489dd576db88/5b32a3dae_white-abstract-texture-background.jpg)",
+                backgroundSize: "150px",
+                opacity: 0.08
+              }}
+            />
+          </div>
         </motion.div>
 
       </div>
