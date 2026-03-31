@@ -11,7 +11,7 @@ const benefits = [
 
 export default function RejuvenationSection({ treatmentImage }) {
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
         {/* TEXTO (agora só lista) */}
@@ -20,7 +20,7 @@ export default function RejuvenationSection({ treatmentImage }) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="space-y-5"
+          className="space-y-4 md:space-y-5"
         >
           {benefits.map((b, i) => (
             <div key={i} className="flex items-start gap-3">
@@ -43,11 +43,11 @@ export default function RejuvenationSection({ treatmentImage }) {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative"
         >
-          <div className="rounded-[2rem] overflow-hidden shadow-xl relative w-44 mx-auto lg:w-full">
+          <div className="rounded-[2rem] overflow-hidden shadow-xl relative w-full max-w-sm mx-auto lg:max-w-none">
             <img
               src="https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f99d1c92d_Screenshot_1.jpg"
               alt="Tratamento de rejuvenescimento facial"
-              className="w-full h-64 md:h-[500px] object-cover"
+              className="w-full h-72 sm:h-80 md:h-[500px] object-cover"
             />
 
             <div
