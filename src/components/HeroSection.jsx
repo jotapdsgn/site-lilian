@@ -50,14 +50,16 @@ export default function HeroSection() {
               </span>
 
               {/* FRASE 2 — CORRIGIDA */}
-              <span
-                className="block mt-1 md:mt-2 lg:mt-3 text-5xl md:text-7xl lg:text-8xl font-script
-                leading-[1.1] py-2 overflow-visible
-                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-                bg-clip-text text-transparent"
-              >
-                naturalidade e sofisticação.
-              </span>
+<span
+  className="inline-block mt-1 md:mt-2 lg:mt-3 px-1 md:px-2
+  text-5xl md:text-7xl lg:text-8xl font-script
+  leading-[1.15]
+  bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
+  bg-clip-text text-transparent"
+  style={{ paddingTop: "6px", paddingBottom: "6px" }}
+>
+  naturalidade e sofisticação.
+</span>
 
             </h1>
 
