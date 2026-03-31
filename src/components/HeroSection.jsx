@@ -49,21 +49,22 @@ export default function HeroSection() {
                 Realce sua beleza com
               </span>
 
-              {/* FRASE 2 */}
+              {/* FRASE 2 — GRANDE + SEM QUEBRA */}
               <span
-                className="inline-block mt-1 md:mt-2 px-1 md:px-2
-                text-[2.25rem] md:text-6xl lg:text-7xl font-script
-                leading-[1.08]
+                className="inline-block mt-2 px-1 md:px-2
+                text-[2.8rem] sm:text-[3.2rem] md:text-[4.2rem] lg:text-[5.2rem]
+                font-script
+                leading-[0.9]
+                whitespace-nowrap
                 bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
                 bg-clip-text text-transparent"
-                style={{ paddingTop: "5px", paddingBottom: "5px" }}
               >
                 naturalidade e sofisticação.
               </span>
 
             </h1>
 
-            {/* FOTO MOBILE (VOLTOU COMO ANTES) */}
+            {/* FOTO MOBILE */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -147,6 +148,7 @@ export default function HeroSection() {
                 />
               </motion.div>
 
+              {/* TEXTURA */}
               <div
                 className="absolute inset-0 rounded-[2rem]"
                 style={{
