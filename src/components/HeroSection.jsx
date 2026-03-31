@@ -81,7 +81,7 @@ export default function HeroSection() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-14 h-14 flex items-center justify-center z-10"
+                  className="absolute -bottom-4 -right-4 bg-[#cfbfad] rounded-xl shadow-lg p-2 w-14 h-14 flex items-center justify-center z-10"
                 >
                   <img
                     src={LOGO_BADGE}
