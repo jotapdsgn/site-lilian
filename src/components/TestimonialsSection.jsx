@@ -104,7 +104,7 @@ export default function TestimonialsSection() {
             rel="noopener noreferrer"
             className="inline-block mt-6 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
-            Agendar minha consulta
+            Falar com a Dra. Lilian
           </a>
         </div>
       </div>

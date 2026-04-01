@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-lilian.jpg";
 
 const WHATSAPP =
   "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.";
@@ -14,7 +13,7 @@ export default function HeroSection() {
           <div className="relative">
             
             <img
-              src={heroImg}
+              src="/images/lilian.jpg"
               alt="Dra. Lilian Monteiro"
               width={500}
               height={640}
@@ -33,17 +32,17 @@ export default function HeroSection() {
               }}
             />
 
-            {/* 🔥 LOGO ANIMADA */}
+            {/* LOGO ANIMADA */}
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-4 -right-4 z-30 rounded-xl shadow-lg p-2 w-14 h-14 flex items-center justify-center"
               style={{
-                backgroundColor: "#E9DFD1" // marrom clarinho elegante
+                backgroundColor: "#E9DFD1"
               }}
             >
               <img
-                src="https://media.base44.com/images/public/69c6fc2447dd489dd576db88/63002581d_Prancheta1-8.png"
+                src="/images/logo.png"
                 alt="Logo"
                 className="w-full h-full object-contain"
               />
