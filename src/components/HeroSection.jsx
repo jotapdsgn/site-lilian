@@ -52,10 +52,10 @@ export default function HeroSection() {
               {/* FRASE 2 — GRANDE + SEM QUEBRA */}
 <span
   className="
-    inline-block mt-2 px-1 md:px-2
-    text-[4.5rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[9rem]
+    inline-block mt-1 px-1 md:px-2
+    text-[5.2rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] xl:text-[10rem]
     font-script
-    leading-[0.75] sm:leading-[0.8] md:leading-[0.8]
+    leading-[0.68] sm:leading-[0.7] md:leading-[0.75]
     tracking-tight
     bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
     bg-clip-text text-transparent

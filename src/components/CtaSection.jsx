@@ -27,7 +27,8 @@ export default function CtaSection() {
           Agende já
         </p>
 
-        <h2 className="text-white text-5xl md:text-6xl font-light leading-tight font-script">
+        {/* TITULO AJUSTADO */}
+        <h2 className="text-white text-5xl md:text-6xl font-light leading-[1.15] tracking-tight">
           Dê o primeiro passo em direção à sua melhor versão
         </h2>
 
