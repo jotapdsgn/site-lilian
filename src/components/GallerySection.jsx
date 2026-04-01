@@ -1,17 +1,17 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const placeholderPhotos = [
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/46865cb01_harmonizacao-facial.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f55b89c49_Preenchimento-facial.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/eae5d44dc_botox-tratamentos-faciais.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/7267af99b_bioestimulador-de-colageno-radiesse-bio-renew-clinica-de-estetica.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/aaa83258d_rinomodelacao-em-Belo-Horizonte.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f99d1c92d_Screenshot_1.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/47e5485c0_Screenshot_11.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/46865cb01_harmonizacao-facial.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f55b89c49_Preenchimento-facial.jpg",
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/eae5d44dc_botox-tratamentos-faciais.jpg",
+const photos = [
+  "/images/foto1.jpeg",
+  "/images/foto2.jpeg",
+  "/images/foto3.jpeg",
+  "/images/foto4.jpeg",
+  "/images/foto5.jpeg",
+  "/images/foto6.jpeg",
+  "/images/foto7.jpeg",
+  "/images/foto8.jpeg",
+  "/images/foto9.jpeg",
+  "/images/foto10.jpeg",
 ];
 
 export default function GallerySection() {
@@ -72,7 +72,7 @@ export default function GallerySection() {
             className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {placeholderPhotos.map((src, i) => (
+            {photos.map((src, i) => (
               <div
                 key={`${src}-${i}`}
                 className="flex-shrink-0 w-72 h-80 rounded-xl overflow-hidden snap-start border border-primary-foreground/25 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] ring-1 ring-primary-foreground/10"
