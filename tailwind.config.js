@@ -6,6 +6,7 @@ module.exports = {
   	extend: {
       fontFamily: {
         heading: ['var(--font-heading)'],
+        display: ['var(--font-heading)'],
         body: ['var(--font-body)'],
         script: ['var(--font-script)'],
       },
@@ -15,6 +16,9 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+        gold: 'hsl(32 40% 46%)',
+        'gold-light': 'hsl(38 48% 72%)',
+        'hero-bg': 'hsl(36 33% 95%)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

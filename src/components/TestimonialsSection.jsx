@@ -23,77 +23,90 @@ export default function TestimonialsSection() {
   const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section id="depoimentos" className="py-20 md:py-32 bg-secondary/30">
+    <section id="depoimentos" className="py-20 md:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}>
-          
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">Depoimentos</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-light text-foreground">Histórias que falam por si</h2>
-        </motion.div>
+        <div
+          className="rounded-[1.75rem] border border-border/80 bg-card p-8 md:p-12 lg:p-14 text-center shadow-[0_24px_70px_-20px_rgba(40,30,22,0.18),inset_0_1px_0_0_rgba(255,255,255,0.65)] ring-1 ring-black/[0.04]"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">Depoimentos</p>
+            <h2 className="font-heading text-3xl md:text-5xl font-light text-foreground tracking-tight leading-tight">
+              Histórias que falam por si
+            </h2>
+          </motion.div>
 
-        <div className="mt-16 relative">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={current}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4 }}
-              className="bg-card rounded-2xl p-8 md:p-12 shadow-sm">
-              
-              <div className="flex justify-center gap-1 mb-6">
-                {[...Array(5)].map((_, i) =>
-                <Star key={i} size={16} className="fill-primary text-primary" />
-                )}
-              </div>
+          <div className="mt-12 md:mt-14 relative">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+                className="rounded-2xl border border-border/60 bg-secondary/25 px-6 py-8 md:px-10 md:py-10 shadow-inner"
+              >
+                <div className="flex justify-center gap-1 mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="fill-primary text-primary" />
+                  ))}
+                </div>
 
-              <p className="font-body text-base md:text-lg text-muted-foreground font-light leading-relaxed italic max-w-2xl mx-auto">
-                "{testimonials[current].text}"
-              </p>
+                <p className="font-body text-base md:text-lg text-muted-foreground font-light leading-relaxed italic max-w-2xl mx-auto">
+                  &ldquo;{testimonials[current].text}&rdquo;
+                </p>
 
-              <div className="mt-8">
-                <p className="font-body text-xs text-muted-foreground tracking-wider uppercase">Paciente</p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+                <div className="mt-8">
+                  <p className="font-body text-xs text-muted-foreground tracking-wider uppercase">Paciente</p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
 
-          <div className="flex justify-center items-center gap-4 mt-8">
-            <button
-              onClick={prev}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:bg-accent transition-colors">
-              <ChevronLeft size={18} className="text-muted-foreground" />
-            </button>
-            <div className="flex gap-2">
-              {testimonials.map((_, i) =>
+            <div className="flex justify-center items-center gap-4 mt-8">
               <button
-                key={i}
-                onClick={() => setCurrent(i)}
-                className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-border"}`} />
-              )}
+                type="button"
+                onClick={prev}
+                className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:bg-accent transition-colors shadow-sm"
+              >
+                <ChevronLeft size={18} className="text-muted-foreground" />
+              </button>
+              <div className="flex gap-2">
+                {testimonials.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => setCurrent(i)}
+                    className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-border"}`}
+                  />
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={next}
+                className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:bg-accent transition-colors shadow-sm"
+              >
+                <ChevronRight size={18} className="text-muted-foreground" />
+              </button>
             </div>
-            <button
-              onClick={next}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:bg-accent transition-colors">
-              <ChevronRight size={18} className="text-muted-foreground" />
-            </button>
           </div>
+
+          <p className="mt-10 font-body text-sm text-muted-foreground max-w-xl mx-auto">
+            Resultados que vão além da estética e refletem em autoconfiança e autoestima.
+          </p>
+
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-6 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+          >
+            Agendar minha consulta
+          </a>
         </div>
-
-        <p className="mt-10 font-body text-sm text-muted-foreground">
-          Resultados que vão além da estética e refletem em autoconfiança e autoestima.
-        </p>
-
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-6 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity">
-          Agendar minha consulta
-        </a>
       </div>
     </section>
   );

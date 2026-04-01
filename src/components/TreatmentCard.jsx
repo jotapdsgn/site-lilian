@@ -28,8 +28,7 @@ export default function TreatmentCard({ title, description, image, whatsappLink,
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 font-body text-xs tracking-wide text-white px-4 py-2.5 rounded-full hover:opacity-90 transition-opacity text-center w-full"
-          style={{ background: 'linear-gradient(135deg, #b8956a 0%, #9d7e63 100%)' }}
+          className="inline-block mt-4 font-body text-xs tracking-wide bg-primary text-primary-foreground px-4 py-2.5 rounded-full hover:opacity-90 transition-opacity text-center w-full"
         >
           Saber mais
         </a>

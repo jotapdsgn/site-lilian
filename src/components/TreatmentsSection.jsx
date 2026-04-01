@@ -54,8 +54,8 @@ export default function TreatmentsSection({ images }) {
           </p>
 
 <h2 className="text-foreground">
-  <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1]">
-    Tratamentos modernos
+  <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1] tracking-tight">
+    Tratamentos e Protocolos
   </span>
 
   <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
@@ -64,7 +64,7 @@ export default function TreatmentsSection({ images }) {
 </h2>
 
           <p className="mt-4 font-body text-sm md:text-base text-muted-foreground font-light max-w-xl mx-auto">
-            Procedimentos personalizados com foco em naturalidade, segurança e resultados elegantes.
+            Soluções modernas e seguras para realçar sua beleza com equilíbrio e sofisticação.
           </p>
         </motion.div>
 

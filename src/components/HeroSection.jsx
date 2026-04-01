@@ -1,169 +1,58 @@
-import { motion } from "framer-motion";
+import heroImg from "@/assets/hero-lilian.jpg";
 
-const content = {
-  whatsapp:
-    "https://api.whatsapp.com/send/?phone=5531994105755&text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.",
-  title: {
-    line1: "Realce sua beleza com",
-    highlight: "naturalidade e sofisticação.",
-  },
-  description: {
-    line1:
-      "Harmonização facial e tratamentos estéticos personalizados, com foco em resultados",
-    highlight: "elegantes, seguros e naturais.",
-  },
-  button: "Agendar consulta",
-};
-
-const PHOTO = "/images/lilian.jpg";
-const LOGO_BADGE = "/images/logo.png";
-const LOGO_WATERMARK = "/images/textura.jpg";
+const WHATSAPP =
+  "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-32 md:pt-20 overflow-hidden">
-      
-      {/* Fundo */}
-      <img
-        src={LOGO_WATERMARK}
-        alt=""
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] md:w-[900px] opacity-[0.05] pointer-events-none select-none"
-      />
+    <section className="relative min-h-screen bg-hero-bg pt-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-center min-h-[calc(100vh-4rem)]">
+        {/* Foto — primeiro no mobile */}
+        <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end order-1 lg:order-2 pt-12 lg:pt-0">
+          <div className="relative">
+            <img
+              src={heroImg}
+              alt="Dra. Lilian Monteiro"
+              width={500}
+              height={640}
+              className="relative z-10 w-72 md:w-96 lg:w-[420px] h-auto object-cover rounded-2xl"
+            />
+            <div
+              className="absolute inset-0 z-20 rounded-2xl pointer-events-none"
+              style={{
+                background: `
+                  linear-gradient(to bottom, transparent 50%, hsl(36 33% 95%) 100%),
+                  linear-gradient(to right, hsl(36 33% 95% / 0.3) 0%, transparent 30%),
+                  linear-gradient(to left, hsl(36 33% 95% / 0.3) 0%, transparent 30%)
+                `,
+              }}
+            />
+          </div>
+        </div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
-          {/* TEXTO */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative z-10 px-4 sm:px-0"
-          >
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-[1.05] text-foreground">
-              
-              {/* FRASE 1 */}
-              <span className="block text-3xl md:text-5xl leading-tight font-medium
-                bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-                bg-clip-text text-transparent">
-                Realce sua beleza com
-              </span>
-
-              {/* FRASE 2 — GRANDE + SEM QUEBRA */}
-<span
-  className="
-    inline-block mt-1 px-1 md:px-2
-    text-[5.2rem] sm:text-[6rem] md:text-[7rem] lg:text-[8rem] xl:text-[10rem]
-    font-script
-    leading-[0.68] sm:leading-[0.7] md:leading-[0.75]
-    tracking-tight
-    bg-gradient-to-r from-[#c8a27a] to-[#6b4a2b]
-    bg-clip-text text-transparent
-  "
->
-  naturalidade e
-  <br />
-  sofisticação.
-</span>
-
-            </h1>
-
-            {/* FOTO MOBILE */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center mt-12 mb-12 lg:hidden"
-            >
-              <div className="relative w-64">
-                <div className="absolute -inset-5 bg-accent/50 rounded-[2rem] rotate-3" />
-                
-                <img
-                  src={PHOTO}
-                  alt="Dra. Lilian Monteiro"
-                  className="relative rounded-[2rem] w-full object-cover shadow-2xl"
-                />
-
-                <motion.div
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -bottom-4 -right-4 bg-[#cfbfad] rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
-                >
-                  <img
-                    src={LOGO_BADGE}
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-
-            {/* DESCRIÇÃO */}
-            <p className="mt-5 font-body text-lg md:text-xl text-muted-foreground font-light leading-snug">
-              {content.description.line1}{" "}
-              <span className="text-primary font-medium">
-                {content.description.highlight}
-              </span>
-            </p>
-
+        {/* Texto */}
+        <div className="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left pb-16 lg:pb-0 mt-8 lg:mt-0">
+          <h1 className="font-display font-light text-3xl md:text-4xl lg:text-[3.15rem] xl:text-[3.5rem] leading-[1.12] tracking-tight text-foreground mb-6">
+            Realce Sua Beleza <br className="hidden lg:block" />
+            <span className="block mt-1 font-normal italic text-gold tracking-tight">
+              Com Naturalidade
+            </span>
+          </h1>
+          <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+            Dra. Lilian Monteiro, especialista em harmonização facial e tratamentos
+            avançados, oferecendo uma abordagem personalizada que une ciência, estética e
+            olhar clínico para valorizar sua beleza única com elegância e naturalidade.
+          </p>
+          <div className="mt-8">
             <a
-              href={content.whatsapp}
+              href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-8 font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity w-full text-center md:w-auto"
+              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-full font-body text-sm hover:opacity-90 transition-opacity"
             >
-              {content.button}
+              Agendar consulta
             </a>
-          </motion.div>
-
-          {/* FOTO DESKTOP */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative hidden lg:flex justify-end"
-          >
-            <div className="relative w-44 md:w-96 lg:w-[440px]">
-              <div className="absolute -inset-4 bg-accent/50 rounded-[2rem] rotate-3" />
-              
-              <img
-                src={PHOTO}
-                alt="Dra. Lilian Monteiro"
-                className="relative rounded-[2rem] w-full object-cover shadow-2xl"
-              />
-
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-2 w-16 h-16 flex items-center justify-center z-10"
-              >
-                <img
-                  src={LOGO_BADGE}
-                  alt="Logo"
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-
-              {/* TEXTURA */}
-              <div
-                className="absolute inset-0 rounded-[2rem]"
-                style={{
-                  backgroundImage: "url(/images/textura.jpg)",
-                  backgroundSize: "150px",
-                  opacity: 0.08,
-                }}
-              />
-            </div>
-          </motion.div>
-
+          </div>
         </div>
       </div>
     </section>
