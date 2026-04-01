@@ -28,9 +28,9 @@ export default function CtaSection() {
         </p>
 
         {/* TITULO AJUSTADO */}
-        <h2 className="text-white text-5xl md:text-6xl font-light leading-[1.15] tracking-tight">
-          Dê o primeiro passo em direção à sua melhor versão
-        </h2>
+<h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-snug tracking-tight font-heading">
+  Dê o primeiro passo em direção à sua melhor versão
+</h2>
 
         <p className="mt-3 font-body text-base text-white/80 font-light leading-relaxed">
           Agende sua consulta e descubra o tratamento ideal para você.
