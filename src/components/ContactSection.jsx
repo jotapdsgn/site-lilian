@@ -6,7 +6,7 @@ export default function ContactSection() {
       <section className="py-16 bg-brand-gradient">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="font-display text-xl md:text-2xl text-center text-primary-foreground mb-10 font-medium tracking-tight">
-            Agende uma Consulta
+            Agende uma consulta
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="flex flex-col items-center text-center rounded-xl p-6 border border-primary-foreground/20 bg-primary-foreground/10">

@@ -1,29 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Ysabeau+Infant:wght@100;200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* =========================
-   SILK SERIF (SEPARADO POR FAMÍLIA)
-========================= */
-
-@font-face {
-  font-family: 'Silk Serif ExtraLight';
-  src: url('/silk-serif-font-family/SilkSerif-TRIAL-ExtraLight.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Silk Serif Light';
-  src: url('/silk-serif-font-family/SilkSerif-TRIAL-Light.otf') format('opentype');
-}
-
-/* Italic */
-
-@font-face {
-  font-family: 'Silk Serif Light Italic';
-  src: url('/silk-serif-font-family/SilkSerif-TRIAL-LightItalic.otf') format('opentype');
-}
 
 /* =========================
    SCRIPT
@@ -40,7 +19,7 @@
 
 @layer base {
   :root {
-    --font-heading: 'Silk Serif ExtraLight', serif;
+    --font-heading: 'Gilda Display', serif;
     --font-body: 'Ysabeau Infant', sans-serif;
     --font-script: 'RetroSignature', cursive;
 
@@ -58,17 +37,17 @@
     font-family: var(--font-body);
   }
 
-  /* 🔥 HEADINGS ULTRA FINOS (REAL) */
+  /* 🔥 HEADINGS FINOS NATURALMENTE */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Silk Serif ExtraLight', serif;
-    font-weight: normal;
-    letter-spacing: -0.02em;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
   .font-heading,
   .font-display {
-    font-family: 'Silk Serif ExtraLight', serif;
-    font-weight: normal;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
   }
 
   .font-body {
