@@ -50,18 +50,18 @@ export default function TreatmentsSection({ images }) {
           className="text-center mb-16"
         >
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
-            Tratamentos
+            Procedimentos
           </p>
 
-<h2 className="text-foreground">
-  <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1] tracking-tight">
-    Tratamentos e Protocolos
-  </span>
+          <h2 className="text-foreground">
+            <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1] tracking-tight">
+              Tratamentos e Protocolos
+            </span>
 
-  <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
-    com abordagem personalizada
-  </span>
-</h2>
+            <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
+              com abordagem personalizada
+            </span>
+          </h2>
 
           <p className="mt-4 font-body text-sm md:text-base text-muted-foreground font-light max-w-xl mx-auto">
             Soluções modernas e seguras para realçar sua beleza com equilíbrio e sofisticação.
@@ -70,14 +70,33 @@ export default function TreatmentsSection({ images }) {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {treatments.map((t, i) => (
-            <TreatmentCard
-              key={i}
-              title={t.title}
-              description={t.desc}
-              image={t.image}
-              whatsappLink={WHATSAPP_BASE + encodeURIComponent(t.msg)}
-              delay={i * 0.1}
-            />
+            <div key={i} className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow">
+              
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={t.image}
+                  alt={t.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="p-5">
+                <h3 className="font-heading text-lg text-foreground mb-2">{t.title}</h3>
+                <p className="text-muted-foreground font-body text-sm mb-4">{t.desc}</p>
+
+                {/* BOTÃO ATUALIZADO */}
+                <a
+                  href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm font-body hover:underline"
+                >
+                  Saber mais →
+                </a>
+
+              </div>
+            </div>
           ))}
         </div>
 
@@ -92,7 +111,7 @@ export default function TreatmentsSection({ images }) {
             to="/tratamentos"
             className="inline-block font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
-            Ver todos os tratamentos
+            Ver todos os procedimentos
           </Link>
         </motion.div>
 
