@@ -8,27 +8,27 @@ export default function ContactSection() {
     <>
       <section className="py-16 bg-brand-gradient">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="font-display text-xl md:text-2xl text-center text-primary-foreground mb-10 font-medium tracking-tight">
+          <h2 className="font-display text-2xl md:text-3xl text-center text-primary-foreground mb-10 font-medium tracking-tight">
             Agende uma consulta
           </h2>
 
           {/* Grid dos cards: limitado em largura e centralizado */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-[720px] mx-auto">
             <div className="flex flex-col items-center text-center rounded-xl p-6 border border-primary-foreground/20 bg-primary-foreground/10 w-full">
-              <Phone className="text-primary-foreground mb-3 opacity-95" size={28} />
-              <p className="font-body text-sm text-primary-foreground/75 mb-1">Telefone</p>
+              <Phone className="text-primary-foreground mb-3 opacity-95" size={32} />
+              <p className="font-body text-base md:text-lg text-primary-foreground/75 mb-1">Telefone</p>
               <a
                 href="tel:+5531994105755"
-                className="font-body text-primary-foreground text-sm hover:opacity-90 transition-opacity"
+                className="font-body text-base md:text-lg text-primary-foreground hover:opacity-90 transition-opacity"
               >
                 (31) 99410-5755
               </a>
             </div>
 
             <div className="flex flex-col items-center text-center rounded-xl p-6 border border-primary-foreground/20 bg-primary-foreground/10 w-full">
-              <CalendarDays className="text-primary-foreground mb-3 opacity-95" size={28} />
-              <p className="font-body text-sm text-primary-foreground/75 mb-1">Agendamento</p>
-              <p className="font-body text-primary-foreground text-sm">10h às 19h30</p>
+              <CalendarDays className="text-primary-foreground mb-3 opacity-95" size={32} />
+              <p className="font-body text-base md:text-lg text-primary-foreground/75 mb-1">Agendamento</p>
+              <p className="font-body text-base md:text-lg text-primary-foreground">até 19h30</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function ContactSection() {
 
       <section className="py-16 bg-hero-bg">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="font-display text-xl md:text-2xl text-center text-foreground mb-12 font-medium tracking-tight">
+          <h2 className="font-display text-2xl md:text-3xl text-center text-foreground mb-12 font-medium tracking-tight">
             Local de atendimentos
           </h2>
 
@@ -44,8 +44,8 @@ export default function ContactSection() {
             {/* Itaúna */}
             <div className="rounded-xl p-6 border border-border bg-card/80 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3 mb-3">
-                <MapPin className="text-gold flex-shrink-0" size={20} />
-                <h3 className="font-display text-lg text-foreground">Itaúna</h3>
+                <MapPin className="text-gold flex-shrink-0" size={22} />
+                <h3 className="font-display text-lg md:text-xl text-foreground">Itaúna</h3>
               </div>
 
               <a
@@ -53,7 +53,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Abrir Avenida Jove Soares, 768 no Google Maps"
-                className="font-body text-sm text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
+                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
               >
                 Av. Jove Soares, 768, Sala 02
                 <br />
@@ -65,10 +65,10 @@ export default function ContactSection() {
                   href={mapsUrl("Av. Jove Soares, 768, Sala 02, Itaúna MG, 35680-352, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-primary bg-primary-foreground/6 px-3 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
+                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir Avenida Jove Soares, 768 no Google Maps"
                 >
-                  <ExternalLink size={16} />
+                  <ExternalLink size={18} />
                   Abrir no Maps
                 </a>
               </div>
@@ -77,8 +77,8 @@ export default function ContactSection() {
             {/* Belo Horizonte (agora em segundo) */}
             <div className="rounded-xl p-6 border border-border bg-card/80 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3 mb-3">
-                <MapPin className="text-gold flex-shrink-0" size={20} />
-                <h3 className="font-display text-lg text-foreground">Belo Horizonte</h3>
+                <MapPin className="text-gold flex-shrink-0" size={22} />
+                <h3 className="font-display text-lg md:text-xl text-foreground">Belo Horizonte</h3>
               </div>
 
               <a
@@ -86,7 +86,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
-                className="font-body text-sm text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
+                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
               >
                 R. Gonçalves Dias, 82
                 <br />
@@ -98,10 +98,10 @@ export default function ContactSection() {
                   href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-primary bg-primary-foreground/6 px-3 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
+                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
                 >
-                  <ExternalLink size={16} />
+                  <ExternalLink size={18} />
                   Abrir no Maps
                 </a>
               </div>
@@ -110,8 +110,8 @@ export default function ContactSection() {
             {/* Igarapé (agora em terceiro) */}
             <div className="rounded-xl p-6 border border-border bg-card/80 shadow-sm flex flex-col h-full">
               <div className="flex items-center gap-3 mb-3">
-                <MapPin className="text-gold flex-shrink-0" size={20} />
-                <h3 className="font-display text-lg text-foreground">Igarapé</h3>
+                <MapPin className="text-gold flex-shrink-0" size={22} />
+                <h3 className="font-display text-lg md:text-xl text-foreground">Igarapé</h3>
               </div>
 
               <a
@@ -119,7 +119,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Abrir Av. Professor Clóvis Salgado, 746 no Google Maps"
-                className="font-body text-sm text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
+                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
               >
                 Av. Prof. Clóvis Salgado, 746, Sala 01
                 <br />
@@ -131,10 +131,10 @@ export default function ContactSection() {
                   href={mapsUrl("Av. Professor Clóvis Salgado, 746, Sala 01, Padre Eustáquio, Igarapé, MG, 32515-196, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-primary bg-primary-foreground/6 px-3 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
+                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir Av. Professor Clóvis Salgado, 746 no Google Maps"
                 >
-                  <ExternalLink size={16} />
+                  <ExternalLink size={18} />
                   Abrir no Maps
                 </a>
               </div>

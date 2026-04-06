@@ -49,21 +49,21 @@ export default function TreatmentsSection({ images }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
             Procedimentos
           </p>
 
           <h2 className="text-foreground">
-            <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1] tracking-tight">
+            <span className="font-heading text-4xl md:text-5xl font-light block leading-[1.1] tracking-tight">
               Tratamentos e Protocolos
             </span>
 
-            <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
+            <span className="font-script text-6xl md:text-8xl block leading-[1.0] -mt-1 text-primary">
               com abordagem personalizada
             </span>
           </h2>
 
-          <p className="mt-4 font-body text-sm md:text-base text-muted-foreground font-light max-w-xl mx-auto">
+          <p className="mt-4 font-body text-base md:text-lg text-muted-foreground font-light max-w-xl mx-auto">
             Soluções modernas e seguras para realçar sua beleza com equilíbrio e sofisticação.
           </p>
         </motion.div>
@@ -84,8 +84,8 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                <h3 className="font-heading text-lg text-foreground mb-2">{t.title}</h3>
-                <p className="text-muted-foreground font-body text-sm mb-4">{t.desc}</p>
+                <h3 className="font-heading text-xl text-foreground mb-2">{t.title}</h3>
+                <p className="text-muted-foreground font-body text-base mb-4">{t.desc}</p>
 
                 {/* Botão alinhado à esquerda no mobile */}
                 <div className="mt-auto text-left">
@@ -93,7 +93,7 @@ export default function TreatmentsSection({ images }) {
                     href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary text-sm font-body hover:underline"
+                    className="text-primary text-base font-body hover:underline"
                   >
                     Saber mais →
                   </a>
@@ -112,7 +112,7 @@ export default function TreatmentsSection({ images }) {
         >
           <Link
             to="/tratamentos"
-            className="inline-block font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+            className="inline-block font-body text-base tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
             Ver todos os procedimentos
           </Link>

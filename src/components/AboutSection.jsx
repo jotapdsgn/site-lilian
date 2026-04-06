@@ -44,7 +44,7 @@ export default function AboutSection() {
 
           {/* CURSIVA AJUSTADA */}
           <h2
-            className="text-primary text-5xl md:text-7xl leading-[0.9] pb-1"
+            className="text-primary text-4xl md:text-6xl leading-[0.95] pb-1"
             style={{
               fontFamily: "var(--font-script)",
               display: "inline-block"
@@ -53,19 +53,19 @@ export default function AboutSection() {
             Dra. Lilian Monteiro
           </h2>
 
-          <p className="mt-6 font-body text-lg text-muted-foreground font-light leading-relaxed">
+          <p className="mt-6 font-body text-base md:text-lg text-muted-foreground font-light leading-relaxed">
             Sou biomédica esteta, especialista em harmonização facial, com mais de 30 especializações na área.
           </p>
 
-          <p className="mt-4 font-body text-lg text-muted-foreground font-light leading-relaxed">
+          <p className="mt-4 font-body text-base md:text-lg text-muted-foreground font-light leading-relaxed">
             Meu trabalho é focado em realçar a sua beleza de forma sutil e sofisticada, respeitando a individualidade de cada rosto.
           </p>
 
-          <p className="mt-4 font-body text-lg text-muted-foreground font-light leading-relaxed">
+          <p className="mt-4 font-body text-base md:text-lg text-muted-foreground font-light leading-relaxed">
             Acredito que estética de alto padrão não é sobre transformar, mas sobre valorizar o que você já tem de mais bonito, com técnica, precisão e olhar clínico.
           </p>
 
-          <p className="mt-6 font-body text-base text-primary font-medium tracking-wide">
+          <p className="mt-6 font-body text-sm md:text-base text-primary font-medium tracking-wide">
             Biomédica Esteta — CRBM 16928
           </p>
 

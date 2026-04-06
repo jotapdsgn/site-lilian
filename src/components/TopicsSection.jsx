@@ -18,8 +18,13 @@ export default function TopicsSection() {
               key={topic}
               className="flex items-start gap-4 rounded-xl p-5 border border-primary-foreground/20 bg-primary-foreground/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"
             >
-              <CheckCircle className="text-primary-foreground flex-shrink-0 mt-0.5 opacity-90" size={20} />
-              <p className="font-body text-primary-foreground leading-relaxed">{topic}</p>
+              <CheckCircle
+                className="text-primary-foreground flex-shrink-0 mt-0.5 opacity-90"
+                size={22}
+              />
+              <p className="font-body text-sm md:text-base text-primary-foreground leading-relaxed">
+                {topic}
+              </p>
             </div>
           ))}
         </div>
