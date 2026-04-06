@@ -14,7 +14,7 @@ export default function TreatmentCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="group bg-card rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 flex flex-col"
+      className="group bg-card/95 rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 flex flex-col border border-border/60"
     >
       {!hideImage && (
         <div className="h-28 md:h-72 overflow-hidden relative">
@@ -29,13 +29,13 @@ export default function TreatmentCard({
               backgroundImage:
                 "url(https://media.base44.com/images/public/69c6fc2447dd489dd576db88/5b32a3dae_white-abstract-texture-background.jpg)",
               backgroundSize: "150px",
-              opacity: 0.08,
+              opacity: 0.12,
             }}
           />
         </div>
       )}
 
-      <div className="p-4 md:p-6 flex flex-col flex-1">
+      <div className="p-4 md:p-6 flex flex-col flex-1 bg-background/90">
         {/* Fonte reduzida e evitando quebra no meio das palavras */}
         <h3
           className="font-heading text-sm md:text-base text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
