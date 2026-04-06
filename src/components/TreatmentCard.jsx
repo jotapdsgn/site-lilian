@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 
-export default function TreatmentCard({ title, description, image, whatsappLink, delay = 0, hideImage = false }) {
+export default function TreatmentCard({
+  title,
+  description,
+  image,
+  whatsappLink,
+  delay = 0,
+  hideImage = false,
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -27,11 +34,20 @@ export default function TreatmentCard({ title, description, image, whatsappLink,
           />
         </div>
       )}
+
       <div className="p-4 md:p-6 flex flex-col flex-1">
-        <h3 className="font-heading text-xl md:text-3xl font-light italic text-foreground">{title}</h3>
+        {/* Fonte reduzida e evitando quebra no meio das palavras */}
+        <h3
+          className="font-heading text-sm md:text-base text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
+          title={title}
+        >
+          {title}
+        </h3>
+
         <p className="mt-2 font-body text-sm md:text-base text-muted-foreground font-light leading-relaxed flex-1">
           {description}
         </p>
+
         <a
           href={whatsappLink}
           target="_blank"
