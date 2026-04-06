@@ -8,39 +8,43 @@ export default function TreatmentsSection({ images }) {
     {
       title: "Harmonização Facial",
       desc: "Equilíbrio e proporção para um rosto mais harmônico, sem perder a naturalidade.",
-      image: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/46865cb01_harmonizacao-facial.jpg",
-      msg: "Olá! Gostaria de saber mais sobre Harmonização Facial."
+      image:
+        "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/46865cb01_harmonizacao-facial.jpg",
+      msg: "Olá! Gostaria de saber mais sobre Harmonização Facial.",
     },
     {
       title: "Preenchimento Labial",
       desc: "Lábios mais definidos, hidratados e proporcionais ao seu rosto.",
-      image: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f55b89c49_Preenchimento-facial.jpg",
-      msg: "Olá! Gostaria de saber mais sobre Preenchimento Labial."
+      image:
+        "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/f55b89c49_Preenchimento-facial.jpg",
+      msg: "Olá! Gostaria de saber mais sobre Preenchimento Labial.",
     },
     {
       title: "Toxina Botulínica (Botox)",
       desc: "Suavização de linhas de expressão com leveza e naturalidade.",
-      image: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/eae5d44dc_botox-tratamentos-faciais.jpg",
-      msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica (Botox)."
+      image:
+        "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/eae5d44dc_botox-tratamentos-faciais.jpg",
+      msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica (Botox).",
     },
     {
       title: "Bioestimuladores de colágeno",
       desc: "Mais firmeza e qualidade de pele de forma progressiva.",
-      image: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/7267af99b_bioestimulador-de-colageno-radiesse-bio-renew-clinica-de-estetica.jpg",
-      msg: "Olá! Gostaria de saber mais sobre Bioestimuladores de Colágeno."
+      image:
+        "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/7267af99b_bioestimulador-de-colageno-radiesse-bio-renew-clinica-de-estetica.jpg",
+      msg: "Olá! Gostaria de saber mais sobre Bioestimuladores de Colágeno.",
     },
     {
       title: "Rinomodelação",
       desc: "Refinamento do perfil nasal com harmonia e naturalidade.",
-      image: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/aaa83258d_rinomodelacao-em-Belo-Horizonte.jpg",
-      msg: "Olá! Gostaria de saber mais sobre Rinomodelação."
-    }
+      image:
+        "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/aaa83258d_rinomodelacao-em-Belo-Horizonte.jpg",
+      msg: "Olá! Gostaria de saber mais sobre Rinomodelação.",
+    },
   ];
 
   return (
     <section id="tratamentos" className="py-20 md:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-6">
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,22 +52,23 @@ export default function TreatmentsSection({ images }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
+          <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-primary mb-4">
             Procedimentos
           </p>
 
           <h2 className="text-foreground">
-            <span className="font-heading text-3xl md:text-4xl font-light block leading-[1.1] tracking-tight">
+            <span className="font-heading text-3xl md:text-5xl lg:text-6xl font-light block leading-[1.1] tracking-tight">
               Tratamentos e Protocolos
             </span>
 
-            <span className="font-script text-primary text-5xl md:text-7xl block leading-[1.0] -mt-1">
+            <span className="font-script text-primary text-5xl md:text-8xl lg:text-9xl block leading-[1.0] -mt-1">
               com abordagem personalizada
             </span>
           </h2>
 
-          <p className="mt-4 font-body text-sm md:text-base text-muted-foreground font-light max-w-xl mx-auto">
-            Soluções modernas e seguras para realçar sua beleza com equilíbrio e sofisticação.
+          <p className="mt-4 font-body text-sm md:text-lg lg:text-xl text-muted-foreground font-light max-w-xl mx-auto">
+            Soluções modernas e seguras para realçar sua beleza com equilíbrio e
+            sofisticação.
           </p>
         </motion.div>
 
@@ -83,15 +88,17 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                {/* Fonte reduzida somente na versão mobile para evitar encostar no retângulo */}
+                {/* Aumentado apenas em desktop (md/lg) */}
                 <h3
-                  className="font-heading text-sm md:text-base lg:text-lg text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
+                  className="font-heading text-sm md:text-lg lg:text-xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
                   title={t.title}
                 >
                   {t.title}
                 </h3>
 
-                <p className="text-muted-foreground font-body text-sm mb-4">{t.desc}</p>
+                <p className="text-muted-foreground font-body text-sm md:text-base lg:text-lg mb-4">
+                  {t.desc}
+                </p>
 
                 {/* Botão alinhado à esquerda no mobile */}
                 <div className="mt-auto text-left">
@@ -99,7 +106,7 @@ export default function TreatmentsSection({ images }) {
                     href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary text-sm font-body hover:underline"
+                    className="text-primary text-sm md:text-base lg:text-lg font-body hover:underline"
                   >
                     Saber mais →
                   </a>
@@ -118,12 +125,11 @@ export default function TreatmentsSection({ images }) {
         >
           <Link
             to="/tratamentos"
-            className="inline-block font-body text-sm tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
+            className="inline-block font-body text-sm md:text-base lg:text-lg tracking-wider bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
             Ver todos os procedimentos
           </Link>
         </motion.div>
-
       </div>
     </section>
   );
