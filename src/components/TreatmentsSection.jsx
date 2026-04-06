@@ -57,16 +57,16 @@ export default function TreatmentsSection({ images }) {
           </p>
 
           <h2 className="text-foreground">
-            <span className="font-heading text-3xl md:text-5xl lg:text-6xl font-light block leading-[1.1] tracking-tight">
+            <span className="font-heading text-3xl md:text-4xl lg:text-5xl font-light block leading-[1.1] tracking-tight">
               Tratamentos e Protocolos
             </span>
 
-            <span className="font-script text-primary text-5xl md:text-8xl lg:text-9xl block leading-[1.0] -mt-1">
+            <span className="font-script text-primary text-4xl md:text-6xl lg:text-7xl block leading-[1.0] -mt-1">
               com abordagem personalizada
             </span>
           </h2>
 
-          <p className="mt-4 font-body text-sm md:text-lg lg:text-xl text-muted-foreground font-light max-w-xl mx-auto">
+          <p className="mt-4 font-body text-sm md:text-base lg:text-lg text-muted-foreground font-light max-w-xl mx-auto">
             Soluções modernas e seguras para realçar sua beleza com equilíbrio e
             sofisticação.
           </p>
@@ -88,7 +88,6 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                {/* Aumentado apenas em desktop (md/lg) */}
                 <h3
                   className="font-heading text-sm md:text-lg lg:text-xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
                   title={t.title}
@@ -100,7 +99,6 @@ export default function TreatmentsSection({ images }) {
                   {t.desc}
                 </p>
 
-                {/* Botão alinhado à esquerda no mobile */}
                 <div className="mt-auto text-left">
                   <a
                     href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
