@@ -38,7 +38,7 @@ export default function AboutSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
 
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
             Sobre
           </p>
 
@@ -53,19 +53,19 @@ export default function AboutSection() {
             Dra. Lilian Monteiro
           </h2>
 
-          <p className="mt-6 font-body text-base text-muted-foreground font-light leading-relaxed">
+          <p className="mt-6 font-body text-lg text-muted-foreground font-light leading-relaxed">
             Sou biomédica esteta, especialista em harmonização facial, com mais de 30 especializações na área.
           </p>
 
-          <p className="mt-4 font-body text-base text-muted-foreground font-light leading-relaxed">
+          <p className="mt-4 font-body text-lg text-muted-foreground font-light leading-relaxed">
             Meu trabalho é focado em realçar a sua beleza de forma sutil e sofisticada, respeitando a individualidade de cada rosto.
           </p>
 
-          <p className="mt-4 font-body text-base text-muted-foreground font-light leading-relaxed">
+          <p className="mt-4 font-body text-lg text-muted-foreground font-light leading-relaxed">
             Acredito que estética de alto padrão não é sobre transformar, mas sobre valorizar o que você já tem de mais bonito, com técnica, precisão e olhar clínico.
           </p>
 
-          <p className="mt-6 font-body text-sm text-primary font-medium tracking-wide">
+          <p className="mt-6 font-body text-base text-primary font-medium tracking-wide">
             Biomédica Esteta — CRBM 16928
           </p>
 
@@ -81,7 +81,7 @@ export default function AboutSection() {
                 >
                   {s.number}
                 </p>
-                <p className="font-body text-xs tracking-wider uppercase text-muted-foreground mt-1">
+                <p className="font-body text-sm tracking-wider uppercase text-muted-foreground mt-1">
                   {s.label}
                 </p>
               </div>
