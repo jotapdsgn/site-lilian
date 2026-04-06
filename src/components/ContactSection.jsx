@@ -48,29 +48,31 @@ export default function ContactSection() {
                 <h3 className="font-display text-lg md:text-xl text-foreground">Itaúna</h3>
               </div>
 
-              <a
-                href={mapsUrl("Av. Jove Soares, 768, Sala 02, Itaúna MG, 35680-352, Brasil")}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir Avenida Jove Soares, 768 no Google Maps"
-                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
-              >
-                Av. Jove Soares, 768, Sala 02
-                <br />
-                Itaúna, MG 35680-352
-              </a>
-
-              <div className="mt-4 mt-auto">
+              <div className="mt-1 flex flex-col items-start">
                 <a
                   href={mapsUrl("Av. Jove Soares, 768, Sala 02, Itaúna MG, 35680-352, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir Avenida Jove Soares, 768 no Google Maps"
+                  className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 text-left"
                 >
-                  <ExternalLink size={18} />
-                  Abrir no Maps
+                  Av. Jove Soares, 768, Sala 02
+                  <br />
+                  Itaúna, MG 35680-352
                 </a>
+
+                <div className="mt-4">
+                  <a
+                    href={mapsUrl("Av. Jove Soares, 768, Sala 02, Itaúna MG, 35680-352, Brasil")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors"
+                    aria-label="Abrir Avenida Jove Soares, 768 no Google Maps"
+                  >
+                    <ExternalLink size={18} />
+                    Abrir no Maps
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -81,29 +83,31 @@ export default function ContactSection() {
                 <h3 className="font-display text-lg md:text-xl text-foreground">Belo Horizonte</h3>
               </div>
 
-              <a
-                href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
-                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
-              >
-                R. Gonçalves Dias, 82
-                <br />
-                Funcionários — Belo Horizonte 30140-090
-              </a>
-
-              <div className="mt-4 mt-auto">
+              <div className="mt-1 flex flex-col items-start">
                 <a
                   href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
+                  className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 text-left"
                 >
-                  <ExternalLink size={18} />
-                  Abrir no Maps
+                  R. Gonçalves Dias, 82
+                  <br />
+                  Funcionários — Belo Horizonte 30140-090
                 </a>
+
+                <div className="mt-4">
+                  <a
+                    href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors"
+                    aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
+                  >
+                    <ExternalLink size={18} />
+                    Abrir no Maps
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -114,29 +118,31 @@ export default function ContactSection() {
                 <h3 className="font-display text-lg md:text-xl text-foreground">Igarapé</h3>
               </div>
 
-              <a
-                href={mapsUrl("Av. Professor Clóvis Salgado, 746, Sala 01, Padre Eustáquio, Igarapé, MG, 32515-196, Brasil")}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir Av. Professor Clóvis Salgado, 746 no Google Maps"
-                className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 cursor-pointer"
-              >
-                Av. Prof. Clóvis Salgado, 746, Sala 01
-                <br />
-                Padre Eustáquio — Igarapé 32515-196
-              </a>
-
-              <div className="mt-4 mt-auto">
+              <div className="mt-1 flex flex-col items-start">
                 <a
                   href={mapsUrl("Av. Professor Clóvis Salgado, 746, Sala 01, Padre Eustáquio, Igarapé, MG, 32515-196, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors self-start"
                   aria-label="Abrir Av. Professor Clóvis Salgado, 746 no Google Maps"
+                  className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 text-left"
                 >
-                  <ExternalLink size={18} />
-                  Abrir no Maps
+                  Av. Prof. Clóvis Salgado, 746, Sala 01
+                  <br />
+                  Padre Eustáquio — Igarapé 32515-196
                 </a>
+
+                <div className="mt-4">
+                  <a
+                    href={mapsUrl("Av. Professor Clóvis Salgado, 746, Sala 01, Padre Eustáquio, Igarapé, MG, 32515-196, Brasil")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors"
+                    aria-label="Abrir Av. Professor Clóvis Salgado, 746 no Google Maps"
+                  >
+                    <ExternalLink size={18} />
+                    Abrir no Maps
+                  </a>
+                </div>
               </div>
             </div>
           </div>
