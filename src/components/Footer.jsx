@@ -40,7 +40,7 @@ export default function Footer() {
             />
             {/* imagem ssl.jpeg na pasta public/images, um pouco menor que a logo */}
             <img
-              src="/images/ssl.jpeg"
+              src="/images/ssl.jpg"
               alt="Certificado SSL"
               className="h-8 object-contain"
             />
