@@ -83,9 +83,9 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                {/* Título reduzido para evitar encostar no retângulo e sem quebra no meio das palavras */}
+                {/* Fonte reduzida somente na versão mobile para evitar encostar no retângulo */}
                 <h3
-                  className="font-heading text-sm md:text-base text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
+                  className="font-heading text-sm md:text-base lg:text-lg text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
                   title={t.title}
                 >
                   {t.title}
