@@ -31,18 +31,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
           
-          {/* Logo + SSL image abaixo da logo */}
+          {/* Logo + SSL image abaixo da logo (SSL maior que a logo) */}
           <div>
             <img
               src={LOGO_LIGHT}
               alt="Dra. Lilian Monteiro"
-              className="h-10 object-contain mb-2"
+              className="h-10 object-contain mb-3"
             />
-            {/* imagem ssl.jpeg na pasta public/images, um pouco menor que a logo */}
+            {/* imagem ssl.png na pasta public/images, maior que a logo */}
             <img
               src="/images/ssl.png"
               alt="Certificado SSL"
-              className="h-8 object-contain"
+              className="h-14 md:h-14 object-contain"
             />
           </div>
 
