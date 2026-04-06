@@ -42,9 +42,9 @@ export default function AboutSection() {
             Sobre
           </p>
 
-          {/* CURSIVA AJUSTADA */}
+          {/* CURSIVA AUMENTADA SIGNIFICATIVAMENTE */}
           <h2
-            className="text-primary text-4xl md:text-6xl leading-[0.95] pb-1"
+            className="text-primary text-8xl md:text-[7.5rem] leading-[0.85] pb-1"
             style={{
               fontFamily: "var(--font-script)",
               display: "inline-block"
