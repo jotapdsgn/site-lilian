@@ -70,8 +70,11 @@ export default function TreatmentsSection({ images }) {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {treatments.map((t, i) => (
-            <div key={i} className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow">
-              
+            <div
+              key={i}
+              /* Tornar o card um flex-col com altura total para alinhar o botão na base */
+              className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col h-full"
+            >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={t.image}
@@ -81,20 +84,22 @@ export default function TreatmentsSection({ images }) {
                 />
               </div>
 
-              <div className="p-5">
+              {/* Conteúdo do card: flex column, ocupa o espaço disponível */}
+              <div className="p-5 flex flex-col flex-grow">
                 <h3 className="font-heading text-lg text-foreground mb-2">{t.title}</h3>
                 <p className="text-muted-foreground font-body text-sm mb-4">{t.desc}</p>
 
-                {/* BOTÃO ATUALIZADO */}
-                <a
-                  href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary text-sm font-body hover:underline"
-                >
-                  Saber mais →
-                </a>
-
+                {/* Container do botão: empurra para o final do card e centraliza em mobile */}
+                <div className="mt-auto text-center sm:text-left">
+                  <a
+                    href={WHATSAPP_BASE + encodeURIComponent(t.msg)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary text-sm font-body hover:underline"
+                  >
+                    Saber mais →
+                  </a>
+                </div>
               </div>
             </div>
           ))}

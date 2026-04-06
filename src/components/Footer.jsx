@@ -31,21 +31,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
           
-          {/* Logo + descrição */}
+          {/* Logo */}
           <div>
             <img
               src={LOGO_LIGHT}
               alt="Dra. Lilian Monteiro"
               className="h-10 object-contain mb-4"
             />
-            <p className="font-body text-sm font-light leading-relaxed text-primary-foreground/60">
-              Expert em harmonização facial com técnicas exclusivas.<br />
-              <span className="font-semibold text-primary-foreground/80">
-                Realce sua beleza natural sem exageros!
-              </span>
-              <br />
-              Atendimentos em: Belo Horizonte, Itaúna e Igarapé.
-            </p>
           </div>
 
           {/* Contato */}
