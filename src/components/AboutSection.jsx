@@ -69,11 +69,11 @@ export default function AboutSection() {
             Biomédica Esteta — CRBM 16928
           </p>
 
-          <div className="mt-10 grid grid-cols-3 lg:flex lg:flex-wrap gap-6 lg:gap-10">
+          <div className="mt-10 grid grid-cols-3 lg:flex lg:flex-wrap gap-4 lg:gap-8">
             {stats.map((s, i) => (
               <div key={i}>
                 <p
-                  className="text-2xl md:text-4xl font-bold text-primary"
+                  className="text-xl md:text-3xl font-bold text-primary"
                   style={{
                     fontFamily: "'Ysabeau Infant', sans-serif",
                     fontWeight: 700
@@ -81,7 +81,7 @@ export default function AboutSection() {
                 >
                   {s.number}
                 </p>
-                <p className="font-body text-sm tracking-wider uppercase text-muted-foreground mt-1">
+                <p className="font-body text-xs md:text-sm tracking-wider uppercase text-muted-foreground mt-1">
                   {s.label}
                 </p>
               </div>
