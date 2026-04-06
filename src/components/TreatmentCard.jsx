@@ -36,15 +36,15 @@ export default function TreatmentCard({
       )}
 
       <div className="p-4 md:p-6 flex flex-col flex-1 bg-background/90">
-        {/* Fonte reduzida e evitando quebra no meio das palavras */}
+        {/* Aumentei os textos apenas para desktop (md+ e lg+) */}
         <h3
-          className="font-heading text-sm md:text-base text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
+          className="font-heading text-sm md:text-lg lg:text-xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
           title={title}
         >
           {title}
         </h3>
 
-        <p className="mt-2 font-body text-sm md:text-base text-muted-foreground font-light leading-relaxed flex-1">
+        <p className="mt-2 font-body text-sm md:text-lg lg:text-xl text-muted-foreground font-light leading-relaxed flex-1">
           {description}
         </p>
 
@@ -52,7 +52,7 @@ export default function TreatmentCard({
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 font-body text-sm tracking-wide bg-primary text-primary-foreground px-5 py-3 rounded-full hover:opacity-90 transition-opacity text-center w-full"
+          className="inline-block mt-4 font-body text-sm md:text-base lg:text-lg tracking-wide bg-primary text-primary-foreground px-5 py-3 rounded-full hover:opacity-90 transition-opacity text-center w-full"
         >
           Saber mais
         </a>
