@@ -75,7 +75,7 @@ export default function GallerySection() {
             {photos.map((src, i) => (
               <div
                 key={`${src}-${i}`}
-                className="flex-shrink-0 w-72 h-80 rounded-xl overflow-hidden snap-start border border-primary-foreground/25 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] ring-1 ring-primary-foreground/10"
+                className="flex-shrink-0 w-72 h-96 rounded-xl overflow-hidden snap-start border border-primary-foreground/25 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] ring-1 ring-primary-foreground/10"
               >
                 <img
                   src={src}
