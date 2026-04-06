@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import TreatmentCard from "./TreatmentCard";
 import { Link } from "react-router-dom";
 
 const WHATSAPP_BASE = "https://api.whatsapp.com/send/?phone=5531994105755&text=";
@@ -84,7 +83,14 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                <h3 className="font-heading text-lg text-foreground mb-2">{t.title}</h3>
+                {/* Título reduzido para evitar encostar no retângulo e sem quebra no meio das palavras */}
+                <h3
+                  className="font-heading text-sm md:text-base text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2rem] md:min-h-[2.5rem]"
+                  title={t.title}
+                >
+                  {t.title}
+                </h3>
+
                 <p className="text-muted-foreground font-body text-sm mb-4">{t.desc}</p>
 
                 {/* Botão alinhado à esquerda no mobile */}
