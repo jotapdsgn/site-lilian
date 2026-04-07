@@ -10,7 +10,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-20 md:py-32">
+    <section id="sobre" className="pt-12 md:pt-20 pb-10 md:pb-16">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
         {/* FOTO */}
