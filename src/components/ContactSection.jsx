@@ -28,7 +28,7 @@ export default function ContactSection() {
             <div className="flex flex-col items-center text-center rounded-xl p-6 border border-primary-foreground/20 bg-primary-foreground/10 w-full">
               <CalendarDays className="text-primary-foreground mb-3 opacity-95" size={32} />
               <p className="font-body text-base md:text-lg text-primary-foreground/75 mb-1">Agendamento</p>
-              <p className="font-body text-base md:text-lg text-primary-foreground">10h até 19h30</p>
+              <p className="font-body text-base md:text-lg text-primary-foreground">10h às 19h30</p>
             </div>
           </div>
         </div>
