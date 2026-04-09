@@ -113,7 +113,7 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                <h3 className="font-heading text-base md:text-lg lg:text-2xl lg:font-semibold text-foreground mb-2 leading-snug">
+                <h3 className="font-heading text-lg md:text-lg lg:text-2xl text-foreground mb-2 leading-snug">
                   {t.title}
                 </h3>
 
