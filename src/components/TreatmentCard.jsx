@@ -26,8 +26,7 @@ export default function TreatmentCard({
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage:
-                "url(https://media.base44.com/images/public/69c6fc2447dd489dd576db88/5b32a3dae_white-abstract-texture-background.jpg)",
+              backgroundImage: "url('/images/textura.jpg')",
               backgroundSize: "150px",
               opacity: 0.12,
             }}
@@ -36,7 +35,6 @@ export default function TreatmentCard({
       )}
 
       <div className="p-4 md:p-6 flex flex-col flex-1 bg-background/90">
-        {/* Aumentei os textos apenas para desktop (md+ e lg+) */}
         <h3
           className="font-heading text-sm md:text-lg lg:text-xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
           title={title}

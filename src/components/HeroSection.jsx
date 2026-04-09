@@ -23,7 +23,7 @@ const item = {
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-hero-bg pt-4 pb-6 overflow-hidden">
+    <section className="relative bg-hero-bg pt-4 pb-6 lg:pt-32 lg:pb-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-center">
         
         {/* FOTO */}

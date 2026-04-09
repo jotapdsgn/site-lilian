@@ -88,7 +88,7 @@ export default function TreatmentsSection({ images }) {
           </p>
         </motion.div>
 
-        {/* 🎬 GRID COM ANIMAÇÃO EM CASCATA */}
+        {/* GRID COM ANIMAÇÃO */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -113,7 +113,7 @@ export default function TreatmentsSection({ images }) {
               </div>
 
               <div className="p-5 flex flex-col flex-grow">
-                <h3 className="font-heading text-sm md:text-lg lg:text-xl text-foreground mb-2 leading-snug">
+                <h3 className="font-heading text-base md:text-lg lg:text-2xl lg:font-semibold text-foreground mb-2 leading-snug">
                   {t.title}
                 </h3>
 
@@ -136,7 +136,7 @@ export default function TreatmentsSection({ images }) {
           ))}
         </motion.div>
 
-        {/* 🎬 BOTÃO */}
+        {/* BOTÃO */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
