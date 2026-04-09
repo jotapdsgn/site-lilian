@@ -101,9 +101,20 @@ export default function TreatmentsSection({ images }) {
               key={i}
               variants={item}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              className="relative group bg-card rounded-xl overflow-hidden border border-border hover:shadow-xl transition-all duration-300 flex flex-col h-full"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              {/* textura atrás de todo o card */}
+              <div
+                className="absolute inset-0 z-0 pointer-events-none"
+                style={{
+                  backgroundImage: "url('/images/textura.jpg')",
+                  backgroundRepeat: "repeat",
+                  backgroundSize: "150px",
+                  opacity: 0.12,
+                }}
+              />
+
+              <div className="relative z-10 aspect-[4/3] overflow-hidden">
                 <img
                   src={t.image}
                   alt={t.title}
@@ -112,7 +123,7 @@ export default function TreatmentsSection({ images }) {
                 />
               </div>
 
-              <div className="p-5 flex flex-col flex-grow">
+              <div className="p-5 flex flex-col flex-grow relative z-10">
                 <h3 className="font-heading text-lg md:text-lg lg:text-2xl text-foreground mb-2 leading-snug">
                   {t.title}
                 </h3>

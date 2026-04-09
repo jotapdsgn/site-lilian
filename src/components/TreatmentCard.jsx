@@ -14,27 +14,30 @@ export default function TreatmentCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      className="group bg-card/95 rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 flex flex-col border border-border/60"
+      className="relative group bg-card/95 rounded-xl md:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 flex flex-col border border-border/60"
     >
+      {/* textura atrás de todo o conteúdo do card */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/textura.jpg')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "150px",
+          opacity: 0.12,
+        }}
+      />
+
       {!hideImage && (
-        <div className="h-28 md:h-72 overflow-hidden relative">
+        <div className="relative z-10 h-28 md:h-72 overflow-hidden">
           <img
             src={image}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: "url('/images/textura.jpg')",
-              backgroundSize: "150px",
-              opacity: 0.12,
-            }}
-          />
         </div>
       )}
 
-      <div className="p-4 md:p-6 flex flex-col flex-1 bg-background/90">
+      <div className="relative z-10 p-4 md:p-6 flex flex-col flex-1 bg-background/90">
         <h3
           className="font-heading text-base md:text-lg lg:text-2xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
           title={title}

@@ -49,7 +49,7 @@ export default function GallerySection() {
             <button
               type="button"
               onClick={() => scroll("left")}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-primary-foreground/95 text-primary rounded-full p-2 shadow-lg hover:bg-primary-foreground transition-colors -ml-3"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-primary-foreground/95 text-primary rounded-full p-2 shadow-lg hover:bg-primary-foreground transition-colors -ml-3"
               aria-label="Ver fotos anteriores"
             >
               <ChevronLeft size={20} />
@@ -59,32 +59,46 @@ export default function GallerySection() {
             <button
               type="button"
               onClick={() => scroll("right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-primary-foreground/95 text-primary rounded-full p-2 shadow-lg hover:bg-primary-foreground transition-colors -mr-3"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-primary-foreground/95 text-primary rounded-full p-2 shadow-lg hover:bg-primary-foreground transition-colors -mr-3"
               aria-label="Ver próximas fotos"
             >
               <ChevronRight size={20} />
             </button>
           )}
 
-          <div
-            ref={scrollRef}
-            onScroll={checkScroll}
-            className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {photos.map((src, i) => (
-              <div
-                key={`${src}-${i}`}
-                className="flex-shrink-0 w-72 h-96 rounded-xl overflow-hidden snap-start border border-primary-foreground/25 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] ring-1 ring-primary-foreground/10"
-              >
-                <img
-                  src={src}
-                  alt={`Resultado ${i + 1}`}
-                  loading="lazy"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
+          {/* container relativo para posicionar a textura por baixo das fotos */}
+          <div className="relative">
+            {/* textura por baixo das fotos (z-0) */}
+            <div
+              className="absolute inset-0 z-0 pointer-events-none"
+              style={{
+                backgroundImage: "url('/images/textura.jpg')",
+                backgroundRepeat: "repeat",
+                backgroundSize: "150px",
+                opacity: 0.08,
+              }}
+            />
+
+            <div
+              ref={scrollRef}
+              onScroll={checkScroll}
+              className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4 relative z-10"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            >
+              {photos.map((src, i) => (
+                <div
+                  key={`${src}-${i}`}
+                  className="flex-shrink-0 w-72 h-96 rounded-xl overflow-hidden snap-start border border-primary-foreground/25 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.35)] ring-1 ring-primary-foreground/10 bg-transparent"
+                >
+                  <img
+                    src={src}
+                    alt={`Resultado ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
