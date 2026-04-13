@@ -94,15 +94,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("/images/textura.jpg");
-  background-repeat: repeat;
-  background-size: 400px;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 1;
-}
