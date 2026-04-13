@@ -39,7 +39,7 @@ export default function TreatmentCard({
 
       <div className="relative z-10 p-4 md:p-6 flex flex-col flex-1 bg-background/90">
         <h3
-          className="font-heading text-base md:text-lg lg:text-2xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
+          className="font-heading font-bold text-base md:text-base lg:text-xl text-foreground mb-2 leading-snug break-normal whitespace-normal hyphens-none min-h-[2.25rem] md:min-h-[2.75rem]"
           title={title}
         >
           {title}
