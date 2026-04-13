@@ -4,8 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const WHATSAPP_LINK =
   "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Lilian%20Monteiro.";
-const LOGO_DARK =
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/9b811e8c5_Prancheta3-8.png";
+const LOGO_DARK = "/images/logodark.png";
 
 export default function Navbar({ heroOverlay = false }) {
   const [open, setOpen] = useState(false);
@@ -30,7 +29,10 @@ export default function Navbar({ heroOverlay = false }) {
     } else {
       navigate("/");
       setTimeout(
-        () => document.querySelector(anchor)?.scrollIntoView({ behavior: "smooth" }),
+        () =>
+          document.querySelector(anchor)?.scrollIntoView({
+            behavior: "smooth",
+          }),
         300
       );
     }
@@ -43,7 +45,7 @@ export default function Navbar({ heroOverlay = false }) {
         onHero
           ? "border-b border-transparent bg-transparent"
           : "border-b border-border/50 bg-background/80 backdrop-blur-md"
-      } relative`} /* <-- adicionei relative aqui */
+      } relative`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
@@ -69,7 +71,9 @@ export default function Navbar({ heroOverlay = false }) {
               window.scrollTo(0, 0);
             }}
             className={`font-body text-sm tracking-widest uppercase transition-colors ${
-              onHero ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
+              onHero
+                ? "text-white/90 hover:text-white"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Procedimentos
@@ -77,7 +81,9 @@ export default function Navbar({ heroOverlay = false }) {
           <button
             onClick={() => navTo("#sobre")}
             className={`font-body text-sm tracking-widest uppercase transition-colors ${
-              onHero ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
+              onHero
+                ? "text-white/90 hover:text-white"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Sobre mim
@@ -85,7 +91,9 @@ export default function Navbar({ heroOverlay = false }) {
           <button
             onClick={() => navTo("#depoimentos")}
             className={`font-body text-sm tracking-widest uppercase transition-colors ${
-              onHero ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
+              onHero
+                ? "text-white/90 hover:text-white"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
             Depoimentos
@@ -95,7 +103,9 @@ export default function Navbar({ heroOverlay = false }) {
             target="_blank"
             rel="noopener noreferrer"
             className={`font-body text-sm tracking-wider px-6 py-3 rounded-full transition-opacity hover:opacity-90 ${
-              onHero ? "bg-white/95 text-foreground" : "bg-primary text-primary-foreground"
+              onHero
+                ? "bg-white/95 text-foreground"
+                : "bg-primary text-primary-foreground"
             }`}
           >
             Agendar consulta
@@ -104,18 +114,19 @@ export default function Navbar({ heroOverlay = false }) {
 
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden transition-colors ${onHero ? "text-white" : "text-foreground"}`}
+          className={`md:hidden transition-colors ${
+            onHero ? "text-white" : "text-foreground"
+          }`}
           aria-label="Abrir menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile menu: agora posicionado absolute abaixo da nav para não ficar cortado */}
       {open && (
         <div
           className="md:hidden absolute left-0 right-0 top-full z-40 bg-background border-t border-border px-6 py-6 space-y-5 shadow-lg"
-          style={{ paddingTop: "env(safe-area-inset-top, 1rem)" }} /* protege notch */
+          style={{ paddingTop: "env(safe-area-inset-top, 1rem)" }}
         >
           <button
             onClick={() => {

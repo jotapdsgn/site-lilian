@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const PHOTO = "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/47e5485c0_Screenshot_11.jpg";
+const PHOTO = "/images/about.jpg"; // ✅ agora usando a imagem local
 
 const stats = [
   { number: "5+", label: "anos de experiência" },
@@ -37,7 +37,6 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-
           <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
             Sobre
           </p>
@@ -86,7 +85,6 @@ export default function AboutSection() {
               </div>
             ))}
           </div>
-
         </motion.div>
       </div>
     </section>

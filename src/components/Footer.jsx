@@ -19,9 +19,7 @@ const InstagramIcon = (props) => (
   </svg>
 );
 
-const LOGO_LIGHT =
-  "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/dbbf97335_Prancheta6-8.png";
-
+const LOGO_LIGHT = "/images/logobranca.png"; // ✅ agora usando a logo local
 const WHATSAPP_LINK =
   "https://api.whatsapp.com/send/?phone=5531994105755&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20tratamentos%20da%20Dra.%20Lilian%20Monteiro.";
 
@@ -30,15 +28,14 @@ export default function Footer() {
     <footer className="bg-primary text-primary-foreground/80 py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
-          
-          {/* Logo + SSL image abaixo da logo (SSL maior que a logo) */}
+          {/* Logo + SSL image abaixo da logo */}
           <div>
             <img
               src={LOGO_LIGHT}
               alt="Dra. Lilian Monteiro"
               className="h-10 object-contain mb-3"
             />
-            {/* imagem ssl.png na pasta public/images, maior que a logo */}
+            {/* imagem ssl.png na pasta public/images */}
             <img
               src="/images/ssl.png"
               alt="Certificado SSL"

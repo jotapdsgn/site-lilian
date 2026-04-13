@@ -7,57 +7,48 @@ import TreatmentCard from "../components/TreatmentCard";
 
 const WHATSAPP_BASE = "https://api.whatsapp.com/send/?phone=5531994105755&text=";
 
-const IMAGES = {
-  treatment: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/e90027931_generated_31a96336.png",
-  rejuvenation: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/d4583bcdc_generated_3df5d131.png",
-  filler: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/945a231a5_generated_dc01f921.png",
-  botox: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/408de247d_generated_55350f63.png",
-  pdo: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/fdd891351_generated_7cb335ec.png",
-  laser: "https://media.base44.com/images/public/69c6fc2447dd489dd576db88/92a239970_generated_e0fd8d4e.png",
-};
-
 const categories = [
   {
     title: "Harmonização Facial",
     subtitle: "Técnicas que equilibram e valorizam sua beleza natural",
     treatments: [
-      { title: "Harmonização Facial", desc: "Conjunto de técnicas que equilibram os traços do rosto, valorizando sua beleza natural com resultados sutis e sofisticados.", image: IMAGES.treatment, msg: "Olá! Gostaria de saber mais sobre Harmonização Facial." },
-      { title: "Toxina Botulínica (Botox)", desc: "Suaviza rugas e linhas de expressão, prevenindo o envelhecimento com aspecto leve e natural, sem perder a identidade.", image: IMAGES.botox, msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica (Botox)." },
-      { title: "Preenchimentos", desc: "Restaura volume, contorno e sustentação da face, corrigindo sulcos e realçando pontos estratégicos com precisão.", image: IMAGES.filler, msg: "Olá! Gostaria de saber mais sobre Preenchimentos." },
-      { title: "Bioestimuladores de Colágeno", desc: "Estimula a produção natural de colágeno, melhorando firmeza, qualidade e densidade da pele ao longo do tempo.", image: IMAGES.rejuvenation, msg: "Olá! Gostaria de saber mais sobre Bioestimuladores de Colágeno." },
-      { title: "Rinomodelação", desc: "Corrige imperfeições do nariz sem cirurgia, proporcionando harmonia facial com resultados imediatos e refinados.", image: IMAGES.laser, msg: "Olá! Gostaria de saber mais sobre Rinomodelação." },
+      { title: "Harmonização Facial", desc: "Conjunto de técnicas que equilibram os traços do rosto, valorizando sua beleza natural com resultados sutis e sofisticados.", msg: "Olá! Gostaria de saber mais sobre Harmonização Facial." },
+      { title: "Toxina Botulínica (Botox)", desc: "Suaviza rugas e linhas de expressão, prevenindo o envelhecimento com aspecto leve e natural, sem perder a identidade.", msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica (Botox)." },
+      { title: "Preenchimentos", desc: "Restaura volume, contorno e sustentação da face, corrigindo sulcos e realçando pontos estratégicos com precisão.", msg: "Olá! Gostaria de saber mais sobre Preenchimentos." },
+      { title: "Bioestimuladores de Colágeno", desc: "Estimula a produção natural de colágeno, melhorando firmeza, qualidade e densidade da pele ao longo do tempo.", msg: "Olá! Gostaria de saber mais sobre Bioestimuladores de Colágeno." },
+      { title: "Rinomodelação", desc: "Corrige imperfeições do nariz sem cirurgia, proporcionando harmonia facial com resultados imediatos e refinados.", msg: "Olá! Gostaria de saber mais sobre Rinomodelação." },
     ],
   },
   {
     title: "Qualidade de Pele",
     subtitle: "Tratamentos para uma pele mais saudável, luminosa e jovem",
     treatments: [
-      { title: "Limpeza de Pele", desc: "Remove impurezas profundas, desobstrui poros e promove renovação, deixando a pele mais saudável e equilibrada.", image: IMAGES.filler, msg: "Olá! Gostaria de saber mais sobre Limpeza de Pele." },
-      { title: "Peeling Químico", desc: "Renova a camada superficial da pele, suavizando manchas, acne e linhas finas, com melhora visível da textura.", image: IMAGES.laser, msg: "Olá! Gostaria de saber mais sobre Peeling Químico." },
-      { title: "Microagulhamento (MMP)", desc: "Estimula colágeno através de microperfurações, melhorando textura, poros, cicatrizes e viço da pele.", image: IMAGES.treatment, msg: "Olá! Gostaria de saber mais sobre Microagulhamento (MMP)." },
-      { title: "Skinbooster", desc: "Hidratação profunda com ácido hialurônico, devolvendo luminosidade, maciez e aspecto jovem à pele.", image: IMAGES.rejuvenation, msg: "Olá! Gostaria de saber mais sobre Skinbooster." },
-      { title: "Ultraformer", desc: "Ultrassom micro e macrofocado que promove lifting sem cirurgia, melhorando firmeza e redefinindo contornos.", image: IMAGES.botox, msg: "Olá! Gostaria de saber mais sobre Ultraformer." },
-      { title: "Fios de PDO", desc: "Fios absorvíveis que estimulam colágeno e promovem efeito lifting, melhorando sustentação e firmeza da pele.", image: IMAGES.pdo, msg: "Olá! Gostaria de saber mais sobre Fios de PDO." },
+      { title: "Limpeza de Pele", desc: "Remove impurezas profundas, desobstrui poros e promove renovação, deixando a pele mais saudável e equilibrada.", msg: "Olá! Gostaria de saber mais sobre Limpeza de Pele." },
+      { title: "Peeling Químico", desc: "Renova a camada superficial da pele, suavizando manchas, acne e linhas finas, com melhora visível da textura.", msg: "Olá! Gostaria de saber mais sobre Peeling Químico." },
+      { title: "Microagulhamento (MMP)", desc: "Estimula colágeno através de microperfurações, melhorando textura, poros, cicatrizes e viço da pele.", msg: "Olá! Gostaria de saber mais sobre Microagulhamento (MMP)." },
+      { title: "Skinbooster", desc: "Hidratação profunda com ácido hialurônico, devolvendo luminosidade, maciez e aspecto jovem à pele.", msg: "Olá! Gostaria de saber mais sobre Skinbooster." },
+      { title: "Ultraformer", desc: "Ultrassom micro e macrofocado que promove lifting sem cirurgia, melhorando firmeza e redefinindo contornos.", msg: "Olá! Gostaria de saber mais sobre Ultraformer." },
+      { title: "Fios de PDO", desc: "Fios absorvíveis que estimulam colágeno e promovem efeito lifting, melhorando sustentação e firmeza da pele.", msg: "Olá! Gostaria de saber mais sobre Fios de PDO." },
     ],
   },
   {
     title: "Tratamentos Corporais",
     subtitle: "Modelagem, firmeza e bem-estar para o seu corpo",
     treatments: [
-      { title: "Bioestimulador de Colágeno", desc: "Estimula a produção natural de colágeno, melhorando a firmeza e a qualidade da pele em áreas com flacidez.", image: IMAGES.rejuvenation, msg: "Olá! Gostaria de saber mais sobre Bioestimulador de Colágeno Corporal." },
-      { title: "Lipoenzimática", desc: "Aplicação de enzimas que auxiliam na redução de gordura localizada, promovendo contorno corporal mais definido.", image: IMAGES.treatment, msg: "Olá! Gostaria de saber mais sobre Lipoenzimática." },
-      { title: "Intradermoterapia", desc: "Entrega ativos diretamente na pele para tratar gordura localizada, celulite e melhorar o aspecto geral da região.", image: IMAGES.laser, msg: "Olá! Gostaria de saber mais sobre Intradermoterapia Corporal." },
-      { title: "Ultraformer", desc: "Tecnologia de ultrassom que promove efeito lifting e melhora a flacidez, redefinindo o contorno corporal sem cirurgia.", image: IMAGES.botox, msg: "Olá! Gostaria de saber mais sobre Ultraformer Corporal." },
-      { title: "Harmonização Glútea", desc: "Técnicas para melhorar volume, contorno e firmeza dos glúteos, com resultados naturais e proporcionais.", image: IMAGES.filler, msg: "Olá! Gostaria de saber mais sobre Harmonização Glútea." },
-      { title: "Toxina Botulínica (Botox)", desc: "Indicada para tratar excesso de suor (hiperidrose) e suavizar contrações musculares em áreas específicas do corpo.", image: IMAGES.pdo, msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica Corporal." },
+      { title: "Bioestimulador de Colágeno", desc: "Estimula a produção natural de colágeno, melhorando a firmeza e a qualidade da pele em áreas com flacidez.", msg: "Olá! Gostaria de saber mais sobre Bioestimulador de Colágeno Corporal." },
+      { title: "Lipoenzimática", desc: "Aplicação de enzimas que auxiliam na redução de gordura localizada, promovendo contorno corporal mais definido.", msg: "Olá! Gostaria de saber mais sobre Lipoenzimática." },
+      { title: "Intradermoterapia", desc: "Entrega ativos diretamente na pele para tratar gordura localizada, celulite e melhorar o aspecto geral da região.", msg: "Olá! Gostaria de saber mais sobre Intradermoterapia Corporal." },
+      { title: "Ultraformer", desc: "Tecnologia de ultrassom que promove efeito lifting e melhora a flacidez, redefinindo o contorno corporal sem cirurgia.", msg: "Olá! Gostaria de saber mais sobre Ultraformer Corporal." },
+      { title: "Harmonização Glútea", desc: "Técnicas para melhorar volume, contorno e firmeza dos glúteos, com resultados naturais e proporcionais.", msg: "Olá! Gostaria de saber mais sobre Harmonização Glútea." },
+      { title: "Toxina Botulínica (Botox)", desc: "Indicada para tratar excesso de suor (hiperidrose) e suavizar contrações musculares em áreas específicas do corpo.", msg: "Olá! Gostaria de saber mais sobre Toxina Botulínica Corporal." },
     ],
   },
   {
     title: "Tratamentos Capilares",
     subtitle: "Cuidado especializado para cabelos e couro cabeludo",
     treatments: [
-      { title: "MMP Capilar", desc: "Microinfusão de ativos diretamente no couro cabeludo para estimular o crescimento, fortalecer os fios e reduzir a queda.", image: IMAGES.treatment, msg: "Olá! Gostaria de saber mais sobre MMP Capilar." },
-      { title: "Intradermoterapia Capilar", desc: "Aplicação de nutrientes e ativos no couro cabeludo para nutrir os folículos e estimular o crescimento dos fios.", image: IMAGES.rejuvenation, msg: "Olá! Gostaria de saber mais sobre Intradermoterapia Capilar." },
+      { title: "MMP Capilar", desc: "Microinfusão de ativos diretamente no couro cabeludo para estimular o crescimento, fortalecer os fios e reduzir a queda.", msg: "Olá! Gostaria de saber mais sobre MMP Capilar." },
+      { title: "Intradermoterapia Capilar", desc: "Aplicação de nutrientes e ativos no couro cabeludo para nutrir os folículos e estimular o crescimento dos fios.", msg: "Olá! Gostaria de saber mais sobre Intradermoterapia Capilar." },
     ],
   },
 ];
@@ -114,7 +105,6 @@ export default function Treatments() {
                   key={i}
                   title={t.title}
                   description={t.desc}
-                  image={t.image}
                   whatsappLink={WHATSAPP_BASE + encodeURIComponent(t.msg)}
                   delay={i * 0.08}
                   hideImage={true}
