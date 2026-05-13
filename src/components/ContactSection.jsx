@@ -85,24 +85,24 @@ export default function ContactSection() {
 
               <div className="mt-1 flex flex-col items-start">
                 <a
-                  href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
+                  href={mapsUrl("Av. dos Andradas, 2287, Sala 601, Centro, Belo Horizonte, MG, 30260-070, Brasil")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
+                  aria-label="Abrir Avenida dos Andradas, 2287, Sala 601 no Google Maps"
                   className="font-body text-sm md:text-base text-muted-foreground leading-tight line-clamp-3 max-h-[4.5rem] overflow-hidden hover:underline underline-offset-2 text-left"
                 >
-                  R. Gonçalves Dias, 82
+                  Av. dos Andradas, 2287, Sala 601
                   <br />
-                  Funcionários — Belo Horizonte 30140-090
+                  Centro — Belo Horizonte 30260-070
                 </a>
 
                 <div className="mt-4">
                   <a
-                    href={mapsUrl("R. Gonçalves Dias, 82, Funcionários, Belo Horizonte, MG, 30140-090, Brasil")}
+                    href={mapsUrl("Av. dos Andradas, 2287, Sala 601, Centro, Belo Horizonte, MG, 30260-070, Brasil")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm md:text-base text-primary bg-primary-foreground/6 px-4 py-2 rounded-md hover:bg-primary-foreground/10 transition-colors"
-                    aria-label="Abrir R. Gonçalves Dias, 82 no Google Maps"
+                    aria-label="Abrir Avenida dos Andradas, 2287, Sala 601 no Google Maps"
                   >
                     <ExternalLink size={18} />
                     Abrir no Maps
